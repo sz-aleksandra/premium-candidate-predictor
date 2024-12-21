@@ -23,7 +23,6 @@ def calculate_diversity(song_listens):
     return shannon_index / math.log(num_songs)
 
 def calculate_gini(artist_listens):
-    """Calculate Gini coefficient for artist listens."""
     listens = sorted(artist_listens.values())
     total_listens = sum(listens)
     if total_listens == 0:
