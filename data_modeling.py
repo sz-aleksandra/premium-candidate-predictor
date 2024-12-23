@@ -2,6 +2,7 @@ import json
 import math
 import csv
 from dateutil import parser
+from tqdm import tqdm
 
 def import_file(path):
     with open(path, 'r', encoding='utf-8') as json_file:
@@ -42,11 +43,15 @@ tracks_dic = {track["id"]: track for track in tracks}
 
 # Group sessions by user
 user_sessions = {}
-for session in sessions:
+
+print("Processing sessions")
+for session in tqdm(sessions):
     session["timestamp"] = parser.isoparse(session["timestamp"])
     user_sessions.setdefault(session["user_id"], []).append(session)
 
-for user in users:
+
+print("Processing Users")
+for user in tqdm(users):
     u_sess = user_sessions.get(user["user_id"], [])
     sessions_by_id = {}
 
@@ -120,7 +125,7 @@ for user in users:
 
 # Save curated data to CSV
 keys = users[0].keys()
-with open('content/processed_data.csv', mode='w', newline='') as file:
+with open('content/processed_data.csv', mode='w', newline='',encoding='utf-8') as file:
     writer = csv.DictWriter(file, keys)
     writer.writeheader()
     writer.writerows(users)
