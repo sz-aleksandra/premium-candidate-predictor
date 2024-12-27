@@ -108,23 +108,28 @@ for user in tqdm(users):
     user.pop("street", None)
 
     user.update({
-        "frequency": len(sessions_by_id) / total_days,
-        "avr_len": sum((s[-1]["timestamp"] - s[0]["timestamp"]).total_seconds() / 60 for s in sessions_by_id.values()) / len(sessions_by_id),
-        "likes": stats["likes"] / max(total_days, 1),
-        "skips": stats["skips"] / max(total_days, 1),
-        "plays": stats["plays"] / max(total_days, 1),
-        "ads": stats["ads"] / max(total_days, 1),
-        "ad_quits": stats["ad_quits"] / max(len(sessions_by_id), 1),
+        "listening_frequency": len(sessions_by_id) / total_days,
+        "avr_session_len": sum((s[-1]["timestamp"] - s[0]["timestamp"]).total_seconds() / 60 for s in sessions_by_id.values()) / len(sessions_by_id),
+        "like_rate_per_day": stats["likes"] / max(total_days, 1),
+        "skip_rate_per_day": stats["skips"] / max(total_days, 1),
+        "play_rate_per_day": stats["plays"] / max(total_days, 1),
+        "ad_rate_per_day": stats["ads"] / max(total_days, 1),
+        "rate_of_quits_of_sessions_with_ads": stats["ad_quits"] / max(len(sessions_by_id), 1),
         "artist_diversity": calculate_diversity(stats["artists"]),
-        "artist_gini": calculate_gini(stats["artists"]),
-        "year": stats["year"] / max(stats["plays"], 1)
+        "artist_diversity_gini": calculate_gini(stats["artists"]),
+        "avg_year_published_of_songs_played": stats["year"] / max(stats["plays"], 1)
     })
 
     for param in stats["track_params"]:
-        user[param] = stats["track_params"][param] / max(stats["plays"], 1)
+        param_name = "avg_song_"+param
+        user[param_name] = stats["track_params"][param] / max(stats["plays"], 1)
 
-# Save curated data to CSV
+    user['favourite_genres_count'] = len(user['favourite_genres'])
+    user.pop("favourite_genres", None)
+    user.pop("user_id", None)
+    user.pop("city", None)
 keys = users[0].keys()
+print(keys)
 with open('content/processed_data.csv', mode='w', newline='',encoding='utf-8') as file:
     writer = csv.DictWriter(file, keys)
     writer.writeheader()
