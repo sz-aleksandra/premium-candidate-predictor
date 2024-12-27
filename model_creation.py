@@ -23,13 +23,13 @@ def train_and_evaluate_model(X_train,X_test,Y_train,Y_test, model, model_name):
     X_train_scaled = scaler.fit_transform(X_train)
     X_test_scaled = scaler.transform(X_test)
     
-    model.fit(X_train_scaled, y_train)
-    y_pred = model.predict(X_test_scaled)
+    model.fit(X_train_scaled, Y_train)
+    Y_pred = model.predict(X_test_scaled)
     
     print(f"\n{model_name} Results:")
-    print(f"Accuracy: {accuracy_score(y_test, y_pred)}")
-    print(f"ROC AUC: {roc_auc_score(y_test, y_pred)}")
-    print(f"Classification Report:\n{classification_report(y_test, y_pred)}")
+    print(f"Accuracy: {accuracy_score(Y_test, Y_pred)}")
+    print(f"ROC AUC: {roc_auc_score(Y_test, Y_pred)}")
+    print(f"Classification Report:\n{classification_report(Y_test, Y_pred)}")
     
     with open(f'{model_name.lower().replace(" ", "_")}.pkl', 'wb') as f:
         pickle.dump(model, f)
@@ -46,7 +46,7 @@ def main():
     train_and_evaluate_model(X_train, X_test, Y_train, Y_test, lr_model, "Logistic Regression")
     
     rf_model = RandomForestClassifier(n_estimators=100, random_state=42)
-    train_and_evaluate_model(X_lr, y, rf_model, "Random Forest")
+    train_and_evaluate_model(X_train, X_test, Y_train, Y_test,rf_model , "Random Forest")
 
 if __name__ == "__main__":
     main()
