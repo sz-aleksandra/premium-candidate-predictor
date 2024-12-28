@@ -1,3 +1,2 @@
-ab_test.log
-lr_model.pkl
-rfc_model.pkl
+*.log
+*.pkl
