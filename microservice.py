@@ -1,6 +1,18 @@
 import pickle
 from flask import Flask, request, jsonify
 import logging
+import json
+
+
+BASE_MODEL_PATH = 'logistic_regression.pkl'
+ADVANCED_MODEL_PATH = 'random_forest.pkl'
+SCALER_PATH = 'data_scaler.pkl'
+ATTRIBUTES_NEEDED_INFO_PATH = 'content/attributes_required.json'
+HOSTING_IP = '0.0.0.0'
+HOSTING_PORT = 8080
+
+
+
 
 app = Flask(__name__)
 
@@ -11,24 +23,25 @@ logging.basicConfig(
 )
 
 try:
-    with open('data_scaler.pkl','rb') as f:
+    with open(SCALER_PATH,'rb') as f:
         scaler = pickle.load(f)
-    with open('lr_model.pkl', 'rb') as f:
+    with open(BASE_MODEL_PATH, 'rb') as f:
         base_model = pickle.load(f)
-
-    with open('rfc_model.pkl', 'rb') as f:
+    with open(ADVANCED_MODEL_PATH, 'rb') as f:
         advanced_model = pickle.load(f)
 except FileNotFoundError as e:
     logging.error(f"Nie udało się załadować modeli: {e}")
     raise RuntimeError("Nie udało się załadować modeli. Sprawdź pliki .pkl.")
 
-NUMERIC_FEATURES = [
-    "frequency", "avr_len", "likes", "skips", "plays", "ads", "ad_quits",
-    "artist_diversity", "artist_gini", "year", "popularity", "explicit",
-    "danceability", "energy", "key", "loudness", "speechiness",
-    "acousticness", "instrumentalness", "liveness", "valence", "tempo", "time_signature",
-    "favourite_genres_count"
-]
+# NUMERIC_FEATURES = [
+#     "frequency", "avr_len", "likes", "skips", "plays", "ads", "ad_quits",
+#     "artist_diversity", "artist_gini", "year", "popularity", "explicit",
+#     "danceability", "energy", "key", "loudness", "speechiness",
+#     "acousticness", "instrumentalness", "liveness", "valence", "tempo", "time_signature",
+#     "favourite_genres_count"
+# ]
+with open(ATTRIBUTES_NEEDED_INFO_PATH, 'r') as file:
+    NUMERIC_FEATURES = json.load(file)
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -62,6 +75,6 @@ def predict():
         return jsonify({"error": "Wewnętrzny błąd serwera."}), 500
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080, debug=True)
+    app.run(host=HOSTING_IP, port=HOSTING_PORT, debug=True)
 
 

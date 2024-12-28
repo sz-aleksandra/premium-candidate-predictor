@@ -1,0 +1,8 @@
+[
+    "play_rate_per_day",
+    "ad_rate_per_day",
+    "like_rate_per_day",
+    "skip_rate_per_day",
+    "artist_diversity_gini",
+    "avr_session_len"
+]

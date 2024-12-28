@@ -160,6 +160,9 @@ write_processed_data_to_csv("content/processed_Y.csv", Y_binarised)
 
 X = keep_from_list_dict_only_chosen_attributes(users, ["play_rate_per_day", "ad_rate_per_day", "like_rate_per_day", "skip_rate_per_day", "artist_diversity_gini", "avr_session_len"])
 print(X[0].keys())
+X_features = [str(key) for key in X[0].keys()]
+with open('content/attributes_required.json', 'w') as file:
+    json.dump(X_features, file, indent=4)
 
 write_processed_data_to_csv("content/processed_X.csv", X)
 
