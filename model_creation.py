@@ -15,12 +15,8 @@ def load_and_preprocess_data(filepath):
     data['premium_user'] = le.fit_transform(data['premium_user'])
     return data
 
-def train_and_evaluate_model(X_train,X_test,Y_train,Y_test, model, model_name):
-    """Train, evaluate and save a model."""
-    
-    
-    scaler = StandardScaler()
-    X_train_scaled = scaler.fit_transform(X_train)
+def train_and_evaluate_model(X_train,X_test,Y_train,Y_test, scaler,model, model_name):
+    X_train_scaled = scaler.transform(X_train)
     X_test_scaled = scaler.transform(X_test)
     
     model.fit(X_train_scaled, Y_train)
@@ -33,6 +29,15 @@ def train_and_evaluate_model(X_train,X_test,Y_train,Y_test, model, model_name):
     
     with open(f'{model_name.lower().replace(" ", "_")}.pkl', 'wb') as f:
         pickle.dump(model, f)
+    return model
+
+def create_scaler(X_train,Y_train, scaler_name):
+    scaler = StandardScaler()
+    X_train_scaled = scaler.fit_transform(X_train)
+    
+    with open(f'{scaler_name.lower().replace(" ", "_")}.pkl', 'wb') as f:
+        pickle.dump(scaler, f)
+    return scaler
 
 def main():
     data = load_and_preprocess_data('content/processed_data.csv')
@@ -41,12 +46,13 @@ def main():
     X_train, X_test, Y_train, Y_test = train_test_split(
         X, Y, test_size=0.2, random_state=42
     )
+    scaler = create_scaler(X_train,Y_train, "data_scaler")
 
     lr_model = LogisticRegression()
-    train_and_evaluate_model(X_train, X_test, Y_train, Y_test, lr_model, "Logistic Regression")
+    lr_model = train_and_evaluate_model(X_train, X_test, Y_train, Y_test, scaler,lr_model, "Logistic Regression")
     
     rf_model = RandomForestClassifier(n_estimators=100, random_state=42)
-    train_and_evaluate_model(X_train, X_test, Y_train, Y_test,rf_model , "Random Forest")
+    rf_model = train_and_evaluate_model(X_train, X_test, Y_train, Y_test,scaler,rf_model , "Random Forest")
 
 if __name__ == "__main__":
     main()
