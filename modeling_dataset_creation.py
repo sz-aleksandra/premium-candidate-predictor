@@ -34,6 +34,27 @@ def calculate_gini(artist_listens):
     gini = (2 * cumulative) / (n * total_listens) - (n + 1) / n
     return gini
 
+def keep_from_list_dict_only_chosen_attributes(list_dict,chosen_attributes):
+    new_list_dict = []
+    for val_dict in list_dict:
+        record = {}
+        for chosen_attribute in chosen_attributes:
+            if chosen_attribute not in val_dict.keys():
+                raise("Chosen attribute not in data")
+            record[chosen_attribute] = val_dict[chosen_attribute]
+        new_list_dict.append(record)
+    return new_list_dict
+
+def write_processed_data_to_csv(path, data):
+    keys = data[0].keys()
+    with open(path, mode='w', newline='',encoding='utf-8') as file:
+        writer = csv.DictWriter(file, keys)
+        writer.writeheader()
+        writer.writerows(data)
+
+
+
+
 users = import_file("content/users.jsonl")
 sessions = import_file("content/sessions.jsonl")
 tracks = import_file("content/tracks.jsonl")
@@ -128,13 +149,19 @@ for user in tqdm(users):
     user.pop("favourite_genres", None)
     user.pop("user_id", None)
     user.pop("city", None)
-keys = users[0].keys()
-print(keys)
-with open('content/processed_data.csv', mode='w', newline='',encoding='utf-8') as file:
-    writer = csv.DictWriter(file, keys)
-    writer.writeheader()
-    writer.writerows(users)
 
-print("Data processing and export completed.")
+
+Y = keep_from_list_dict_only_chosen_attributes(users,["premium_user"])
+Y_binarised = [{"premium_user":1} if y["premium_user"] == True else {"premium_user":0} for y in Y ]
+print(Y_binarised[0].keys())
+
+write_processed_data_to_csv("content/processed_Y.csv", Y_binarised)
+
+
+X = keep_from_list_dict_only_chosen_attributes(users, ["play_rate_per_day", "ad_rate_per_day", "like_rate_per_day", "skip_rate_per_day", "artist_diversity_gini", "avr_session_len"])
+print(X[0].keys())
+
+write_processed_data_to_csv("content/processed_X.csv", X)
+
 
 
