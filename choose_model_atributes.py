@@ -7,10 +7,9 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, accuracy_score, roc_auc_score
 
+
 def load_and_preprocess_data(filepath):
     data = pd.read_csv(filepath, encoding_errors='ignore')
-    le = LabelEncoder()
-    data['premium_user'] = le.fit_transform(data['premium_user'])
     return data
 
 def show_attribute_weights(X, model, feature_names=None):
@@ -55,9 +54,8 @@ def train_and_evaluate_model(X_train, X_test, Y_train, Y_test, model, model_name
     return model, scaler
 
 def main():
-    data = load_and_preprocess_data('content/processed_data.csv')
-    Y = data['premium_user']
-    X = data.drop('premium_user', axis=1)
+    X = load_and_preprocess_data('content/processed_X.csv')
+    Y = load_and_preprocess_data('content/processed_Y.csv')
     
     X_train, X_test, Y_train, Y_test = train_test_split(
         X, Y, test_size=0.2, random_state=42
