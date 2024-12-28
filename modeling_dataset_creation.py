@@ -46,6 +46,16 @@ def keep_from_list_dict_only_chosen_attributes(list_dict,chosen_attributes):
         new_list_dict.append(record)
     return new_list_dict
 
+def keep_from_list_dict_all_but_chosen_attributes(list_dict, not_chosen_attributes):
+    new_list_dict = []
+    for val_dict in list_dict:
+        record = {}
+        for key in val_dict.keys():
+            if key not in not_chosen_attributes:
+                record[key] = val_dict[key]
+        new_list_dict.append(record)
+    return new_list_dict
+
 def write_processed_data_to_csv(path, data):
     keys = data[0].keys()
     with open(path, mode='w', newline='',encoding='utf-8') as file:
@@ -166,5 +176,12 @@ with open('content/custom_data/attributes_required.json', 'w') as file:
     json.dump(X_features, file, indent=4)
 
 write_processed_data_to_csv("content/custom_data/processed_X.csv", X)
+
+
+all_attributes_X = keep_from_list_dict_all_but_chosen_attributes(users,["premium_user"])
+print(all_attributes_X[0].keys())
+write_processed_data_to_csv("content/custom_data/all_attributes_X.csv", all_attributes_X)
+
+
 
 
