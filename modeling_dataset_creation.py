@@ -2,6 +2,7 @@ import json
 import math
 import csv
 from dateutil import parser
+
 from tqdm import tqdm
 
 def import_file(path):
@@ -155,16 +156,15 @@ Y = keep_from_list_dict_only_chosen_attributes(users,["premium_user"])
 Y_binarised = [{"premium_user":1} if y["premium_user"] == True else {"premium_user":0} for y in Y ]
 print(Y_binarised[0].keys())
 
-write_processed_data_to_csv("content/processed_Y.csv", Y_binarised)
+write_processed_data_to_csv("content/custom_data/processed_Y.csv", Y_binarised)
 
 
 X = keep_from_list_dict_only_chosen_attributes(users, ["play_rate_per_day", "ad_rate_per_day", "like_rate_per_day", "skip_rate_per_day", "artist_diversity_gini", "avr_session_len"])
 print(X[0].keys())
 X_features = [str(key) for key in X[0].keys()]
-with open('content/attributes_required.json', 'w') as file:
+with open('content/custom_data/attributes_required.json', 'w') as file:
     json.dump(X_features, file, indent=4)
 
-write_processed_data_to_csv("content/processed_X.csv", X)
-
+write_processed_data_to_csv("content/custom_data/processed_X.csv", X)
 
 

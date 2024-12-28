@@ -54,8 +54,8 @@ def train_and_evaluate_model(X_train, X_test, Y_train, Y_test, model, model_name
     return model, scaler
 
 def main():
-    X = load_and_preprocess_data('content/processed_X.csv')
-    Y = load_and_preprocess_data('content/processed_Y.csv')
+    X = load_and_preprocess_data('content/custom_data/processed_X.csv')
+    Y = load_and_preprocess_data('content/custom_data/processed_Y.csv')
     
     X_train, X_test, Y_train, Y_test = train_test_split(
         X, Y, test_size=0.2, random_state=42

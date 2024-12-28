@@ -7,7 +7,7 @@ import json
 BASE_MODEL_PATH = 'logistic_regression.pkl'
 ADVANCED_MODEL_PATH = 'random_forest.pkl'
 SCALER_PATH = 'data_scaler.pkl'
-ATTRIBUTES_NEEDED_INFO_PATH = 'content/attributes_required.json'
+ATTRIBUTES_NEEDED_INFO_PATH = 'content/custom_data/attributes_required.json'
 HOSTING_IP = '0.0.0.0'
 HOSTING_PORT = 8080
 
