@@ -8,11 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, accuracy_score, roc_auc_score
 
 def load_and_preprocess_data(filepath):
-    """Load and preprocess the dataset."""
     data = pd.read_csv(filepath, encoding_errors='ignore')
-    
-    le = LabelEncoder()
-    data['premium_user'] = le.fit_transform(data['premium_user'])
     return data
 
 def train_and_evaluate_model(X_train,X_test,Y_train,Y_test, scaler,model, model_name):
@@ -40,9 +36,8 @@ def create_scaler(X_train,Y_train, scaler_name):
     return scaler
 
 def main():
-    data = load_and_preprocess_data('content/processed_data.csv')
-    Y = data['premium_user']
-    X = data.drop('premium_user', axis=1)
+    X = load_and_preprocess_data('content/processed_X.csv')
+    Y = load_and_preprocess_data('content/processed_Y.csv')
     X_train, X_test, Y_train, Y_test = train_test_split(
         X, Y, test_size=0.2, random_state=42
     )
