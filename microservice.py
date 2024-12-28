@@ -33,13 +33,6 @@ except FileNotFoundError as e:
     logging.error(f"Nie udało się załadować modeli: {e}")
     raise RuntimeError("Nie udało się załadować modeli. Sprawdź pliki .pkl.")
 
-# NUMERIC_FEATURES = [
-#     "frequency", "avr_len", "likes", "skips", "plays", "ads", "ad_quits",
-#     "artist_diversity", "artist_gini", "year", "popularity", "explicit",
-#     "danceability", "energy", "key", "loudness", "speechiness",
-#     "acousticness", "instrumentalness", "liveness", "valence", "tempo", "time_signature",
-#     "favourite_genres_count"
-# ]
 with open(ATTRIBUTES_NEEDED_INFO_PATH, 'r') as file:
     NUMERIC_FEATURES = json.load(file)
 
