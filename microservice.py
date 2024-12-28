@@ -11,6 +11,8 @@ logging.basicConfig(
 )
 
 try:
+    with open('data_scaler.pkl','rb') as f:
+        scaler = pickle.load(f)
     with open('lr_model.pkl', 'rb') as f:
         base_model = pickle.load(f)
 
@@ -40,9 +42,9 @@ def predict():
         except KeyError as e:
             missing_feature = e.args[0]
             return jsonify({"error": f"Brakuje wymaganej cechy: {missing_feature}"}), 400
-
-        base_prediction = base_model.predict([features])[0]
-        advanced_prediction = advanced_model.predict([features])[0]
+        features_scaled = scaler.transform([features])
+        base_prediction = base_model.predict(features_scaled)[0]
+        advanced_prediction = advanced_model.predict(features_scaled)[0]
 
         logging.info(
             f"Zapytanie: {data}, Base Prediction: {base_prediction}, Advanced Prediction: {advanced_prediction}"
