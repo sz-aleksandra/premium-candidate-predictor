@@ -30,7 +30,7 @@ def train_and_evaluate_model(X_train,X_val,Y_train,Y_val, scaler,model, model_na
     print(f"ROC AUC: {roc_auc_score(Y_val, Y_pred_val)}")
     print(f"Classification Report:\n{classification_report(Y_val, Y_pred_val)}")
     if save_model:
-        with open(f'{model_name.lower().replace(" ", "_")}.pkl', 'wb') as f:
+        with open(f'content/results/{model_name.lower().replace(" ", "_")}.pkl', 'wb') as f:
             pickle.dump(model, f)
     return model
 
@@ -38,7 +38,7 @@ def create_scaler(X_train,Y_train, scaler_name):
     scaler = StandardScaler()
     X_train_scaled = scaler.fit_transform(X_train)
     
-    with open(f'{scaler_name.lower().replace(" ", "_")}.pkl', 'wb') as f:
+    with open(f'content/results/{scaler_name.lower().replace(" ", "_")}.pkl', 'wb') as f:
         pickle.dump(scaler, f)
     return scaler
 

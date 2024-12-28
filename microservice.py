@@ -4,9 +4,9 @@ import logging
 import json
 
 
-BASE_MODEL_PATH = 'logistic_regression.pkl'
-ADVANCED_MODEL_PATH = 'random_forest.pkl'
-SCALER_PATH = 'data_scaler.pkl'
+BASE_MODEL_PATH = 'content/results/logistic_regression.pkl'
+ADVANCED_MODEL_PATH = 'content/results/random_forest.pkl'
+SCALER_PATH = 'content/results/data_scaler.pkl'
 ATTRIBUTES_NEEDED_INFO_PATH = 'content/custom_data/attributes_required.json'
 HOSTING_IP = '0.0.0.0'
 HOSTING_PORT = 8080
@@ -17,7 +17,7 @@ HOSTING_PORT = 8080
 app = Flask(__name__)
 
 logging.basicConfig(
-    filename='ab_test.log', 
+    filename='content/results/ab_test.log', 
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
@@ -61,6 +61,62 @@ def predict():
                 "base": float(base_prediction),
                 "advanced": float(advanced_prediction)
             }
+        })
+
+    except Exception as e:
+        logging.error(f"Wystąpił błąd: {str(e)}")
+        return jsonify({"error": "Wewnętrzny błąd serwera."}), 500
+    
+
+@app.route('/predict_base', methods=['POST'])
+def predict_base():
+    try:
+        data = request.json
+        if not data:
+            return jsonify({"error": "Brak danych wejściowych."}), 400
+
+        try:
+            features = [data[feature] for feature in NUMERIC_FEATURES]
+        except KeyError as e:
+            missing_feature = e.args[0]
+            return jsonify({"error": f"Brakuje wymaganej cechy: {missing_feature}"}), 400
+        features_scaled = scaler.transform([features])
+        base_prediction = base_model.predict(features_scaled)[0]
+
+        logging.info(
+            f"Zapytanie: {data}, Base Prediction: {base_prediction}"
+        )
+
+        return jsonify({
+            "base_prediction": float(base_prediction)
+        })
+
+    except Exception as e:
+        logging.error(f"Wystąpił błąd: {str(e)}")
+        return jsonify({"error": "Wewnętrzny błąd serwera."}), 500
+    
+
+@app.route('/predict_advanced', methods=['POST'])
+def predict_advanced():
+    try:
+        data = request.json
+        if not data:
+            return jsonify({"error": "Brak danych wejściowych."}), 400
+
+        try:
+            features = [data[feature] for feature in NUMERIC_FEATURES]
+        except KeyError as e:
+            missing_feature = e.args[0]
+            return jsonify({"error": f"Brakuje wymaganej cechy: {missing_feature}"}), 400
+        features_scaled = scaler.transform([features])
+        advanced_prediction = advanced_model.predict(features_scaled)[0]
+
+        logging.info(
+            f"Zapytanie: {data}, Advanced Prediction: {advanced_prediction}"
+        )
+
+        return jsonify({
+            "advanced_prediction": float(advanced_prediction)
         })
 
     except Exception as e:

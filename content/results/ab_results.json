@@ -1,0 +1,134 @@
+[
+    {
+        "seed": 1,
+        "base": {
+            "confusion_matrix": [
+                [
+                    75,
+                    4
+                ],
+                [
+                    26,
+                    45
+                ]
+            ],
+            "precision": 91.837,
+            "accuracy": 80.0,
+            "f1_score": 75.0
+        },
+        "advanced": {
+            "confusion_matrix": [
+                [
+                    76,
+                    3
+                ],
+                [
+                    19,
+                    52
+                ]
+            ],
+            "precision": 94.545,
+            "accuracy": 85.333,
+            "f1_score": 82.54
+        }
+    },
+    {
+        "seed": 2,
+        "base": {
+            "confusion_matrix": [
+                [
+                    66,
+                    5
+                ],
+                [
+                    32,
+                    47
+                ]
+            ],
+            "precision": 90.385,
+            "accuracy": 75.333,
+            "f1_score": 71.756
+        },
+        "advanced": {
+            "confusion_matrix": [
+                [
+                    82,
+                    5
+                ],
+                [
+                    11,
+                    52
+                ]
+            ],
+            "precision": 91.228,
+            "accuracy": 89.333,
+            "f1_score": 86.667
+        }
+    },
+    {
+        "seed": 3,
+        "base": {
+            "confusion_matrix": [
+                [
+                    82,
+                    1
+                ],
+                [
+                    22,
+                    45
+                ]
+            ],
+            "precision": 97.826,
+            "accuracy": 84.667,
+            "f1_score": 79.646
+        },
+        "advanced": {
+            "confusion_matrix": [
+                [
+                    68,
+                    7
+                ],
+                [
+                    18,
+                    57
+                ]
+            ],
+            "precision": 89.062,
+            "accuracy": 83.333,
+            "f1_score": 82.014
+        }
+    },
+    {
+        "seed": 4,
+        "base": {
+            "confusion_matrix": [
+                [
+                    85,
+                    4
+                ],
+                [
+                    22,
+                    39
+                ]
+            ],
+            "precision": 90.698,
+            "accuracy": 82.667,
+            "f1_score": 75.0
+        },
+        "advanced": {
+            "confusion_matrix": [
+                [
+                    65,
+                    4
+                ],
+                [
+                    20,
+                    61
+                ]
+            ],
+            "precision": 93.846,
+            "accuracy": 84.0,
+            "f1_score": 83.562
+        }
+    }
+]
