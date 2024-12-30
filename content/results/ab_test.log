@@ -18009,3 +18009,30 @@
 2024-12-29 03:08:31,433 - INFO - 127.0.0.1 - - [29/Dec/2024 03:08:31] "POST /predict_advanced HTTP/1.1" 200 -
 2024-12-29 03:08:33,468 - INFO - Zapytanie: {'play_rate_per_day': 0.1995382763489893, 'ad_rate_per_day': 0.0383349397911851, 'like_rate_per_day': 0.0167101019602601, 'skip_rate_per_day': 0.0127783132637283, 'artist_diversity_gini': 0.281262543331509, 'avr_session_len': 57.33690151515152}, Advanced Prediction: 0
 2024-12-29 03:08:33,468 - INFO - 127.0.0.1 - - [29/Dec/2024 03:08:33] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 16:01:23,032 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.17:8080
+2024-12-30 16:01:23,032 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-30 16:01:23,050 - INFO -  * Restarting with stat
+2024-12-30 16:01:24,305 - WARNING -  * Debugger is active!
+2024-12-30 16:01:24,305 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 16:03:40,274 - INFO -  * Detected change in 'd:\\SyncVestigat\\2_Studia\\5 sem\\IUM\\gitlaby\\git_vpo_dok_wstep\\ium-projekt-mast-have-24z\\get_microservice_response.py', reloading
+2024-12-30 16:03:40,543 - INFO -  * Restarting with stat
+2024-12-30 16:03:41,953 - WARNING -  * Debugger is active!
+2024-12-30 16:03:41,955 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 16:03:48,224 - INFO - 127.0.0.1 - - [30/Dec/2024 16:03:48] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2024-12-30 16:05:05,282 - INFO -  * Detected change in 'd:\\SyncVestigat\\2_Studia\\5 sem\\IUM\\gitlaby\\git_vpo_dok_wstep\\ium-projekt-mast-have-24z\\get_microservice_response.py', reloading
+2024-12-30 16:05:05,529 - INFO -  * Restarting with stat
+2024-12-30 16:05:06,898 - WARNING -  * Debugger is active!
+2024-12-30 16:05:06,901 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 16:06:32,500 - INFO -  * Detected change in 'd:\\SyncVestigat\\2_Studia\\5 sem\\IUM\\gitlaby\\git_vpo_dok_wstep\\ium-projekt-mast-have-24z\\get_microservice_response.py', reloading
+2024-12-30 16:06:32,747 - INFO -  * Restarting with stat
+2024-12-30 16:06:34,121 - WARNING -  * Debugger is active!
+2024-12-30 16:06:34,124 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 16:08:39,343 - INFO -  * Detected change in 'd:\\SyncVestigat\\2_Studia\\5 sem\\IUM\\gitlaby\\git_vpo_dok_wstep\\ium-projekt-mast-have-24z\\get_microservice_response.py', reloading
+2024-12-30 16:08:39,641 - INFO -  * Restarting with stat
+2024-12-30 16:08:40,952 - WARNING -  * Debugger is active!
+2024-12-30 16:08:40,954 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 16:13:29,472 - INFO - 127.0.0.1 - - [30/Dec/2024 16:13:29] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2024-12-30 16:13:40,839 - INFO - 127.0.0.1 - - [30/Dec/2024 16:13:40] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
