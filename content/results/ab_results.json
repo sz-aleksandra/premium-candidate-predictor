@@ -988,5 +988,38 @@
             "accuracy": 85.333,
             "f1_score": 83.077
         }
+    },
+    {
+        "seed": 31,
+        "base": {
+            "confusion_matrix": [
+                [
+                    78,
+                    5
+                ],
+                [
+                    24,
+                    43
+                ]
+            ],
+            "precision": 89.583,
+            "accuracy": 80.667,
+            "f1_score": 74.783
+        },
+        "advanced": {
+            "confusion_matrix": [
+                [
+                    71,
+                    4
+                ],
+                [
+                    19,
+                    56
+                ]
+            ],
+            "precision": 93.333,
+            "accuracy": 84.667,
+            "f1_score": 82.963
+        }
     }
 ]
