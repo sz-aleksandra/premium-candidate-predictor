@@ -46,15 +46,11 @@ def train_and_evaluate_model(X_train, X_test, Y_train, Y_test, model, model_name
     
     print(f"\n{model_name} Results:")
     print(f"Accuracy: {accuracy_score(Y_test, Y_pred)}")
-    print(f"ROC AUC: {roc_auc_score(Y_test, Y_pred)}")
     print(f"Classification Report:\n{classification_report(Y_test, Y_pred)}")
-    
-    with open(f'content/results/{model_name.lower().replace(" ", "_")}.pkl', 'wb') as f:
-        pickle.dump(model, f)
     return model, scaler
 
 def main():
-    X = load_and_preprocess_data('content/custom_data/processed_X.csv')
+    X = load_and_preprocess_data('content/custom_data/all_attributes_X.csv')
     Y = load_and_preprocess_data('content/custom_data/processed_Y.csv')
     
     X_train, X_test, Y_train, Y_test = train_test_split(

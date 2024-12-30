@@ -18036,3 +18036,261 @@
 2024-12-30 16:08:40,954 - INFO -  * Debugger PIN: 704-756-622
 2024-12-30 16:13:29,472 - INFO - 127.0.0.1 - - [30/Dec/2024 16:13:29] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
 2024-12-30 16:13:40,839 - INFO - 127.0.0.1 - - [30/Dec/2024 16:13:40] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2024-12-30 17:36:27,447 - INFO -  * Detected change in 'd:\\SyncVestigat\\2_Studia\\5 sem\\IUM\\gitlaby\\git_vpo_dok_wstep\\ium-projekt-mast-have-24z\\get_microservice_response.py', reloading
+2024-12-30 17:36:27,678 - INFO -  * Restarting with stat
+2024-12-30 17:36:29,485 - WARNING -  * Debugger is active!
+2024-12-30 17:36:29,488 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 17:37:04,485 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.17:8080
+2024-12-30 17:37:04,485 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-30 17:37:04,486 - INFO -  * Restarting with stat
+2024-12-30 17:37:05,731 - WARNING -  * Debugger is active!
+2024-12-30 17:37:05,734 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 17:37:22,905 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.17:8080
+2024-12-30 17:37:22,905 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-30 17:37:22,906 - INFO -  * Restarting with stat
+2024-12-30 17:37:24,209 - WARNING -  * Debugger is active!
+2024-12-30 17:37:24,213 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 17:37:29,572 - INFO - Zapytanie: {'play_rate_per_day': 0.1542283545573922, 'ad_rate_per_day': 0.04553408563123, 'like_rate_per_day': 0.0117507317758013, 'skip_rate_per_day': 0.0102818903038261, 'artist_diversity_gini': 0.1951190476190476, 'avr_session_len': 49.89604047619048}, Base Prediction: 0
+2024-12-30 17:37:29,573 - INFO - 127.0.0.1 - - [30/Dec/2024 17:37:29] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:37:31,631 - INFO - Zapytanie: {'play_rate_per_day': 0.1542283545573922, 'ad_rate_per_day': 0.04553408563123, 'like_rate_per_day': 0.0117507317758013, 'skip_rate_per_day': 0.0102818903038261, 'artist_diversity_gini': 0.1951190476190476, 'avr_session_len': 49.89604047619048}, Advanced Prediction: 0
+2024-12-30 17:37:31,631 - INFO - 127.0.0.1 - - [30/Dec/2024 17:37:31] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:37:33,654 - INFO - Zapytanie: {'play_rate_per_day': 35.0, 'ad_rate_per_day': 14.0, 'like_rate_per_day': 10.0, 'skip_rate_per_day': 19.0, 'artist_diversity_gini': 0.1359605911330048, 'avr_session_len': 122.2706}, Base Prediction: 1
+2024-12-30 17:37:33,655 - INFO - 127.0.0.1 - - [30/Dec/2024 17:37:33] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:37:35,680 - INFO - Zapytanie: {'play_rate_per_day': 35.0, 'ad_rate_per_day': 14.0, 'like_rate_per_day': 10.0, 'skip_rate_per_day': 19.0, 'artist_diversity_gini': 0.1359605911330048, 'avr_session_len': 122.2706}, Advanced Prediction: 1
+2024-12-30 17:37:35,681 - INFO - 127.0.0.1 - - [30/Dec/2024 17:37:35] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:37:37,706 - INFO - Zapytanie: {'play_rate_per_day': 0.4026360210878684, 'ad_rate_per_day': 0.1150388631679624, 'like_rate_per_day': 0.0313742354094442, 'skip_rate_per_day': 0.0156871177047221, 'artist_diversity_gini': 0.2048813255709807, 'avr_session_len': 84.42972222222222}, Base Prediction: 1
+2024-12-30 17:37:37,707 - INFO - 127.0.0.1 - - [30/Dec/2024 17:37:37] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:37:39,759 - INFO - Zapytanie: {'play_rate_per_day': 0.4026360210878684, 'ad_rate_per_day': 0.1150388631679624, 'like_rate_per_day': 0.0313742354094442, 'skip_rate_per_day': 0.0156871177047221, 'artist_diversity_gini': 0.2048813255709807, 'avr_session_len': 84.42972222222222}, Advanced Prediction: 1
+2024-12-30 17:37:39,760 - INFO - 127.0.0.1 - - [30/Dec/2024 17:37:39] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:37:41,793 - INFO - Zapytanie: {'play_rate_per_day': 0.6371355816840232, 'ad_rate_per_day': 0.2394906796400938, 'like_rate_per_day': 0.2349719875714128, 'skip_rate_per_day': 0.3750514417005243, 'artist_diversity_gini': 0.2327214573772771, 'avr_session_len': 96.08131}, Base Prediction: 1
+2024-12-30 17:37:41,793 - INFO - 127.0.0.1 - - [30/Dec/2024 17:37:41] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:37:43,826 - INFO - Zapytanie: {'play_rate_per_day': 0.6371355816840232, 'ad_rate_per_day': 0.2394906796400938, 'like_rate_per_day': 0.2349719875714128, 'skip_rate_per_day': 0.3750514417005243, 'artist_diversity_gini': 0.2327214573772771, 'avr_session_len': 96.08131}, Advanced Prediction: 1
+2024-12-30 17:37:43,827 - INFO - 127.0.0.1 - - [30/Dec/2024 17:37:43] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:38:06,419 - INFO -  * Detected change in 'd:\\SyncVestigat\\2_Studia\\5 sem\\IUM\\gitlaby\\git_vpo_dok_wstep\\ium-projekt-mast-have-24z\\get_microservice_response.py', reloading
+2024-12-30 17:38:06,584 - INFO -  * Restarting with stat
+2024-12-30 17:38:07,958 - WARNING -  * Debugger is active!
+2024-12-30 17:38:07,961 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 17:38:42,815 - INFO -  * Detected change in 'd:\\SyncVestigat\\2_Studia\\5 sem\\IUM\\gitlaby\\git_vpo_dok_wstep\\ium-projekt-mast-have-24z\\get_microservice_response.py', reloading
+2024-12-30 17:38:42,974 - INFO -  * Restarting with stat
+2024-12-30 17:38:44,409 - WARNING -  * Debugger is active!
+2024-12-30 17:38:44,412 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 17:38:47,006 - INFO - Zapytanie: {'play_rate_per_day': 0.1542283545573922, 'ad_rate_per_day': 0.04553408563123, 'like_rate_per_day': 0.0117507317758013, 'skip_rate_per_day': 0.0102818903038261, 'artist_diversity_gini': 0.1951190476190476, 'avr_session_len': 49.89604047619048}, Base Prediction: 0
+2024-12-30 17:38:47,007 - INFO - 127.0.0.1 - - [30/Dec/2024 17:38:47] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:38:49,056 - INFO - Zapytanie: {'play_rate_per_day': 0.1542283545573922, 'ad_rate_per_day': 0.04553408563123, 'like_rate_per_day': 0.0117507317758013, 'skip_rate_per_day': 0.0102818903038261, 'artist_diversity_gini': 0.1951190476190476, 'avr_session_len': 49.89604047619048}, Advanced Prediction: 0
+2024-12-30 17:38:49,057 - INFO - 127.0.0.1 - - [30/Dec/2024 17:38:49] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:38:51,091 - INFO - Zapytanie: {'play_rate_per_day': 35.0, 'ad_rate_per_day': 14.0, 'like_rate_per_day': 10.0, 'skip_rate_per_day': 19.0, 'artist_diversity_gini': 0.1359605911330048, 'avr_session_len': 122.2706}, Base Prediction: 1
+2024-12-30 17:38:51,092 - INFO - 127.0.0.1 - - [30/Dec/2024 17:38:51] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:38:53,136 - INFO - Zapytanie: {'play_rate_per_day': 35.0, 'ad_rate_per_day': 14.0, 'like_rate_per_day': 10.0, 'skip_rate_per_day': 19.0, 'artist_diversity_gini': 0.1359605911330048, 'avr_session_len': 122.2706}, Advanced Prediction: 1
+2024-12-30 17:38:53,136 - INFO - 127.0.0.1 - - [30/Dec/2024 17:38:53] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:38:55,174 - INFO - Zapytanie: {'play_rate_per_day': 0.4026360210878684, 'ad_rate_per_day': 0.1150388631679624, 'like_rate_per_day': 0.0313742354094442, 'skip_rate_per_day': 0.0156871177047221, 'artist_diversity_gini': 0.2048813255709807, 'avr_session_len': 84.42972222222222}, Base Prediction: 1
+2024-12-30 17:38:55,174 - INFO - 127.0.0.1 - - [30/Dec/2024 17:38:55] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:38:57,210 - INFO - Zapytanie: {'play_rate_per_day': 0.4026360210878684, 'ad_rate_per_day': 0.1150388631679624, 'like_rate_per_day': 0.0313742354094442, 'skip_rate_per_day': 0.0156871177047221, 'artist_diversity_gini': 0.2048813255709807, 'avr_session_len': 84.42972222222222}, Advanced Prediction: 1
+2024-12-30 17:38:57,210 - INFO - 127.0.0.1 - - [30/Dec/2024 17:38:57] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:38:59,253 - INFO - Zapytanie: {'play_rate_per_day': 0.6371355816840232, 'ad_rate_per_day': 0.2394906796400938, 'like_rate_per_day': 0.2349719875714128, 'skip_rate_per_day': 0.3750514417005243, 'artist_diversity_gini': 0.2327214573772771, 'avr_session_len': 96.08131}, Base Prediction: 1
+2024-12-30 17:38:59,253 - INFO - 127.0.0.1 - - [30/Dec/2024 17:38:59] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:39:01,291 - INFO - Zapytanie: {'play_rate_per_day': 0.6371355816840232, 'ad_rate_per_day': 0.2394906796400938, 'like_rate_per_day': 0.2349719875714128, 'skip_rate_per_day': 0.3750514417005243, 'artist_diversity_gini': 0.2327214573772771, 'avr_session_len': 96.08131}, Advanced Prediction: 1
+2024-12-30 17:39:01,292 - INFO - 127.0.0.1 - - [30/Dec/2024 17:39:01] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:39:03,330 - INFO - Zapytanie: {'play_rate_per_day': 1.0280313133909549, 'ad_rate_per_day': 0.4112125253563818, 'like_rate_per_day': 0.2545601347444268, 'skip_rate_per_day': 0.4112125253563818, 'artist_diversity_gini': 0.2492287055667337, 'avr_session_len': 70.32907666666668}, Base Prediction: 1
+2024-12-30 17:39:03,330 - INFO - 127.0.0.1 - - [30/Dec/2024 17:39:03] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:39:05,362 - INFO - Zapytanie: {'play_rate_per_day': 1.0280313133909549, 'ad_rate_per_day': 0.4112125253563818, 'like_rate_per_day': 0.2545601347444268, 'skip_rate_per_day': 0.4112125253563818, 'artist_diversity_gini': 0.2492287055667337, 'avr_session_len': 70.32907666666668}, Advanced Prediction: 1
+2024-12-30 17:39:05,362 - INFO - 127.0.0.1 - - [30/Dec/2024 17:39:05] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:39:07,400 - INFO - Zapytanie: {'play_rate_per_day': 0.2930060649857045, 'ad_rate_per_day': 0.0803119033545154, 'like_rate_per_day': 0.0247113548783124, 'skip_rate_per_day': 0.0194160645472454, 'artist_diversity_gini': 0.3516287371709057, 'avr_session_len': 71.94197888888888}, Base Prediction: 0
+2024-12-30 17:39:07,400 - INFO - 127.0.0.1 - - [30/Dec/2024 17:39:07] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:39:09,440 - INFO - Zapytanie: {'play_rate_per_day': 0.2930060649857045, 'ad_rate_per_day': 0.0803119033545154, 'like_rate_per_day': 0.0247113548783124, 'skip_rate_per_day': 0.0194160645472454, 'artist_diversity_gini': 0.3516287371709057, 'avr_session_len': 71.94197888888888}, Advanced Prediction: 0
+2024-12-30 17:39:09,440 - INFO - 127.0.0.1 - - [30/Dec/2024 17:39:09] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:39:09,799 - INFO -  * Detected change in 'd:\\SyncVestigat\\2_Studia\\5 sem\\IUM\\gitlaby\\git_vpo_dok_wstep\\ium-projekt-mast-have-24z\\get_microservice_response.py', reloading
+2024-12-30 17:39:09,965 - INFO -  * Restarting with stat
+2024-12-30 17:39:11,316 - WARNING -  * Debugger is active!
+2024-12-30 17:39:11,319 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 17:39:15,791 - INFO - Zapytanie: {'play_rate_per_day': 0.1542283545573922, 'ad_rate_per_day': 0.04553408563123, 'like_rate_per_day': 0.0117507317758013, 'skip_rate_per_day': 0.0102818903038261, 'artist_diversity_gini': 0.1951190476190476, 'avr_session_len': 49.89604047619048}, Base Prediction: 0
+2024-12-30 17:39:15,792 - INFO - 127.0.0.1 - - [30/Dec/2024 17:39:15] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:39:17,827 - INFO - Zapytanie: {'play_rate_per_day': 0.1542283545573922, 'ad_rate_per_day': 0.04553408563123, 'like_rate_per_day': 0.0117507317758013, 'skip_rate_per_day': 0.0102818903038261, 'artist_diversity_gini': 0.1951190476190476, 'avr_session_len': 49.89604047619048}, Advanced Prediction: 0
+2024-12-30 17:39:17,828 - INFO - 127.0.0.1 - - [30/Dec/2024 17:39:17] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:39:30,397 - INFO -  * Detected change in 'd:\\SyncVestigat\\2_Studia\\5 sem\\IUM\\gitlaby\\git_vpo_dok_wstep\\ium-projekt-mast-have-24z\\get_microservice_response.py', reloading
+2024-12-30 17:39:30,590 - INFO -  * Restarting with stat
+2024-12-30 17:39:31,928 - WARNING -  * Debugger is active!
+2024-12-30 17:39:31,931 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 17:39:32,607 - INFO - Zapytanie: {'play_rate_per_day': 0.1542283545573922, 'ad_rate_per_day': 0.04553408563123, 'like_rate_per_day': 0.0117507317758013, 'skip_rate_per_day': 0.0102818903038261, 'artist_diversity_gini': 0.1951190476190476, 'avr_session_len': 49.89604047619048}, Base Prediction: 0
+2024-12-30 17:39:32,607 - INFO - 127.0.0.1 - - [30/Dec/2024 17:39:32] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:39:34,641 - INFO - Zapytanie: {'play_rate_per_day': 0.1542283545573922, 'ad_rate_per_day': 0.04553408563123, 'like_rate_per_day': 0.0117507317758013, 'skip_rate_per_day': 0.0102818903038261, 'artist_diversity_gini': 0.1951190476190476, 'avr_session_len': 49.89604047619048}, Advanced Prediction: 0
+2024-12-30 17:39:34,641 - INFO - 127.0.0.1 - - [30/Dec/2024 17:39:34] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:39:36,672 - INFO - Zapytanie: {'play_rate_per_day': 35.0, 'ad_rate_per_day': 14.0, 'like_rate_per_day': 10.0, 'skip_rate_per_day': 19.0, 'artist_diversity_gini': 0.1359605911330048, 'avr_session_len': 122.2706}, Base Prediction: 1
+2024-12-30 17:39:36,672 - INFO - 127.0.0.1 - - [30/Dec/2024 17:39:36] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:39:38,694 - INFO - Zapytanie: {'play_rate_per_day': 35.0, 'ad_rate_per_day': 14.0, 'like_rate_per_day': 10.0, 'skip_rate_per_day': 19.0, 'artist_diversity_gini': 0.1359605911330048, 'avr_session_len': 122.2706}, Advanced Prediction: 1
+2024-12-30 17:39:38,694 - INFO - 127.0.0.1 - - [30/Dec/2024 17:39:38] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:39:40,730 - INFO - Zapytanie: {'play_rate_per_day': 0.4026360210878684, 'ad_rate_per_day': 0.1150388631679624, 'like_rate_per_day': 0.0313742354094442, 'skip_rate_per_day': 0.0156871177047221, 'artist_diversity_gini': 0.2048813255709807, 'avr_session_len': 84.42972222222222}, Base Prediction: 1
+2024-12-30 17:39:40,730 - INFO - 127.0.0.1 - - [30/Dec/2024 17:39:40] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:39:42,775 - INFO - Zapytanie: {'play_rate_per_day': 0.4026360210878684, 'ad_rate_per_day': 0.1150388631679624, 'like_rate_per_day': 0.0313742354094442, 'skip_rate_per_day': 0.0156871177047221, 'artist_diversity_gini': 0.2048813255709807, 'avr_session_len': 84.42972222222222}, Advanced Prediction: 1
+2024-12-30 17:39:42,775 - INFO - 127.0.0.1 - - [30/Dec/2024 17:39:42] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:39:44,806 - INFO - Zapytanie: {'play_rate_per_day': 0.6371355816840232, 'ad_rate_per_day': 0.2394906796400938, 'like_rate_per_day': 0.2349719875714128, 'skip_rate_per_day': 0.3750514417005243, 'artist_diversity_gini': 0.2327214573772771, 'avr_session_len': 96.08131}, Base Prediction: 1
+2024-12-30 17:39:44,806 - INFO - 127.0.0.1 - - [30/Dec/2024 17:39:44] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:39:46,841 - INFO - Zapytanie: {'play_rate_per_day': 0.6371355816840232, 'ad_rate_per_day': 0.2394906796400938, 'like_rate_per_day': 0.2349719875714128, 'skip_rate_per_day': 0.3750514417005243, 'artist_diversity_gini': 0.2327214573772771, 'avr_session_len': 96.08131}, Advanced Prediction: 1
+2024-12-30 17:39:46,841 - INFO - 127.0.0.1 - - [30/Dec/2024 17:39:46] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:39:48,870 - INFO - Zapytanie: {'play_rate_per_day': 1.0280313133909549, 'ad_rate_per_day': 0.4112125253563818, 'like_rate_per_day': 0.2545601347444268, 'skip_rate_per_day': 0.4112125253563818, 'artist_diversity_gini': 0.2492287055667337, 'avr_session_len': 70.32907666666668}, Base Prediction: 1
+2024-12-30 17:39:48,871 - INFO - 127.0.0.1 - - [30/Dec/2024 17:39:48] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:39:50,907 - INFO - Zapytanie: {'play_rate_per_day': 1.0280313133909549, 'ad_rate_per_day': 0.4112125253563818, 'like_rate_per_day': 0.2545601347444268, 'skip_rate_per_day': 0.4112125253563818, 'artist_diversity_gini': 0.2492287055667337, 'avr_session_len': 70.32907666666668}, Advanced Prediction: 1
+2024-12-30 17:39:50,908 - INFO - 127.0.0.1 - - [30/Dec/2024 17:39:50] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:39:52,923 - INFO - Zapytanie: {'play_rate_per_day': 0.2930060649857045, 'ad_rate_per_day': 0.0803119033545154, 'like_rate_per_day': 0.0247113548783124, 'skip_rate_per_day': 0.0194160645472454, 'artist_diversity_gini': 0.3516287371709057, 'avr_session_len': 71.94197888888888}, Base Prediction: 0
+2024-12-30 17:39:52,923 - INFO - 127.0.0.1 - - [30/Dec/2024 17:39:52] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:39:54,960 - INFO - Zapytanie: {'play_rate_per_day': 0.2930060649857045, 'ad_rate_per_day': 0.0803119033545154, 'like_rate_per_day': 0.0247113548783124, 'skip_rate_per_day': 0.0194160645472454, 'artist_diversity_gini': 0.3516287371709057, 'avr_session_len': 71.94197888888888}, Advanced Prediction: 0
+2024-12-30 17:39:54,960 - INFO - 127.0.0.1 - - [30/Dec/2024 17:39:54] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:39:56,989 - INFO - Zapytanie: {'play_rate_per_day': 0.888697599473496, 'ad_rate_per_day': 0.2069569752198552, 'like_rate_per_day': 0.1095654574693351, 'skip_rate_per_day': 0.04869575887526, 'artist_diversity_gini': 0.1946647440519104, 'avr_session_len': 72.07691666666666}, Base Prediction: 1
+2024-12-30 17:39:56,989 - INFO - 127.0.0.1 - - [30/Dec/2024 17:39:56] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:39:59,026 - INFO - Zapytanie: {'play_rate_per_day': 0.888697599473496, 'ad_rate_per_day': 0.2069569752198552, 'like_rate_per_day': 0.1095654574693351, 'skip_rate_per_day': 0.04869575887526, 'artist_diversity_gini': 0.1946647440519104, 'avr_session_len': 72.07691666666666}, Advanced Prediction: 1
+2024-12-30 17:39:59,026 - INFO - 127.0.0.1 - - [30/Dec/2024 17:39:59] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:40:01,069 - INFO - Zapytanie: {'play_rate_per_day': 0.7353614281236991, 'ad_rate_per_day': 0.1642828722404008, 'like_rate_per_day': 0.0782299391620956, 'skip_rate_per_day': 0.0625839513296765, 'artist_diversity_gini': 0.1990673273098222, 'avr_session_len': 101.5659277777778}, Base Prediction: 1
+2024-12-30 17:40:01,070 - INFO - 127.0.0.1 - - [30/Dec/2024 17:40:01] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:40:03,108 - INFO - Zapytanie: {'play_rate_per_day': 0.7353614281236991, 'ad_rate_per_day': 0.1642828722404008, 'like_rate_per_day': 0.0782299391620956, 'skip_rate_per_day': 0.0625839513296765, 'artist_diversity_gini': 0.1990673273098222, 'avr_session_len': 101.5659277777778}, Advanced Prediction: 1
+2024-12-30 17:40:03,108 - INFO - 127.0.0.1 - - [30/Dec/2024 17:40:03] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:40:05,139 - INFO - Zapytanie: {'play_rate_per_day': 0.3322111237555833, 'ad_rate_per_day': 0.0877267469657601, 'like_rate_per_day': 0.018695864107457, 'skip_rate_per_day': 0.023010294286101, 'artist_diversity_gini': 0.280851183448586, 'avr_session_len': 73.2321}, Base Prediction: 0
+2024-12-30 17:40:05,140 - INFO - 127.0.0.1 - - [30/Dec/2024 17:40:05] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:40:07,174 - INFO - Zapytanie: {'play_rate_per_day': 0.3322111237555833, 'ad_rate_per_day': 0.0877267469657601, 'like_rate_per_day': 0.018695864107457, 'skip_rate_per_day': 0.023010294286101, 'artist_diversity_gini': 0.280851183448586, 'avr_session_len': 73.2321}, Advanced Prediction: 1
+2024-12-30 17:40:07,175 - INFO - 127.0.0.1 - - [30/Dec/2024 17:40:07] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:40:09,220 - INFO - Zapytanie: {'play_rate_per_day': 0.2328719184927747, 'ad_rate_per_day': 0.0823081780879634, 'like_rate_per_day': 0.0883307277041559, 'skip_rate_per_day': 0.1144284427076565, 'artist_diversity_gini': 0.1802681992337165, 'avr_session_len': 77.93318666666667}, Base Prediction: 1
+2024-12-30 17:40:09,220 - INFO - 127.0.0.1 - - [30/Dec/2024 17:40:09] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:40:11,259 - INFO - Zapytanie: {'play_rate_per_day': 0.2328719184927747, 'ad_rate_per_day': 0.0823081780879634, 'like_rate_per_day': 0.0883307277041559, 'skip_rate_per_day': 0.1144284427076565, 'artist_diversity_gini': 0.1802681992337165, 'avr_session_len': 77.93318666666667}, Advanced Prediction: 1
+2024-12-30 17:40:11,260 - INFO - 127.0.0.1 - - [30/Dec/2024 17:40:11] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:40:38,307 - INFO -  * Detected change in 'd:\\SyncVestigat\\2_Studia\\5 sem\\IUM\\gitlaby\\git_vpo_dok_wstep\\ium-projekt-mast-have-24z\\get_microservice_response.py', reloading
+2024-12-30 17:40:38,474 - INFO -  * Restarting with stat
+2024-12-30 17:40:39,888 - WARNING -  * Debugger is active!
+2024-12-30 17:40:39,890 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 17:40:42,072 - INFO - Zapytanie: {'play_rate_per_day': 0.355654510625034, 'ad_rate_per_day': 0.1322305231811023, 'like_rate_per_day': 0.118551503541678, 'skip_rate_per_day': 0.177827255312517, 'artist_diversity_gini': 0.1696410256410256, 'avr_session_len': 82.60946666666666}, Base Prediction: 1
+2024-12-30 17:40:42,072 - INFO - 127.0.0.1 - - [30/Dec/2024 17:40:42] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:40:44,123 - INFO - Zapytanie: {'play_rate_per_day': 0.355654510625034, 'ad_rate_per_day': 0.1322305231811023, 'like_rate_per_day': 0.118551503541678, 'skip_rate_per_day': 0.177827255312517, 'artist_diversity_gini': 0.1696410256410256, 'avr_session_len': 82.60946666666666}, Advanced Prediction: 1
+2024-12-30 17:40:44,123 - INFO - 127.0.0.1 - - [30/Dec/2024 17:40:44] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:40:46,155 - INFO - Zapytanie: {'play_rate_per_day': 0.2325247081051456, 'ad_rate_per_day': 0.0930098832420582, 'like_rate_per_day': 0.0748122973903512, 'skip_rate_per_day': 0.1031196531596732, 'artist_diversity_gini': 0.1941699604743081, 'avr_session_len': 75.23553999999999}, Base Prediction: 1
+2024-12-30 17:40:46,155 - INFO - 127.0.0.1 - - [30/Dec/2024 17:40:46] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:40:48,191 - INFO - Zapytanie: {'play_rate_per_day': 0.2325247081051456, 'ad_rate_per_day': 0.0930098832420582, 'like_rate_per_day': 0.0748122973903512, 'skip_rate_per_day': 0.1031196531596732, 'artist_diversity_gini': 0.1941699604743081, 'avr_session_len': 75.23553999999999}, Advanced Prediction: 1
+2024-12-30 17:40:48,192 - INFO - 127.0.0.1 - - [30/Dec/2024 17:40:48] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:40:50,221 - INFO - Zapytanie: {'play_rate_per_day': 0.2727292045867817, 'ad_rate_per_day': 0.0825693922143467, 'like_rate_per_day': 0.0863225464059079, 'skip_rate_per_day': 0.1438709106765133, 'artist_diversity_gini': 0.2476444334242498, 'avr_session_len': 91.73941875}, Base Prediction: 1
+2024-12-30 17:40:50,221 - INFO - 127.0.0.1 - - [30/Dec/2024 17:40:50] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:40:52,258 - INFO - Zapytanie: {'play_rate_per_day': 0.2727292045867817, 'ad_rate_per_day': 0.0825693922143467, 'like_rate_per_day': 0.0863225464059079, 'skip_rate_per_day': 0.1438709106765133, 'artist_diversity_gini': 0.2476444334242498, 'avr_session_len': 91.73941875}, Advanced Prediction: 0
+2024-12-30 17:40:52,259 - INFO - 127.0.0.1 - - [30/Dec/2024 17:40:52] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:40:54,287 - INFO - Zapytanie: {'play_rate_per_day': 0.926817728119964, 'ad_rate_per_day': 0.4774515569102844, 'like_rate_per_day': 0.4212807855090745, 'skip_rate_per_day': 0.5617077140120994, 'artist_diversity_gini': 0.1331168831168829, 'avr_session_len': 49.9085}, Base Prediction: 1
+2024-12-30 17:40:54,287 - INFO - 127.0.0.1 - - [30/Dec/2024 17:40:54] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:40:56,324 - INFO - Zapytanie: {'play_rate_per_day': 0.926817728119964, 'ad_rate_per_day': 0.4774515569102844, 'like_rate_per_day': 0.4212807855090745, 'skip_rate_per_day': 0.5617077140120994, 'artist_diversity_gini': 0.1331168831168829, 'avr_session_len': 49.9085}, Advanced Prediction: 1
+2024-12-30 17:40:56,324 - INFO - 127.0.0.1 - - [30/Dec/2024 17:40:56] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:40:58,354 - INFO - Zapytanie: {'play_rate_per_day': 0.3466549218682312, 'ad_rate_per_day': 0.1064530862430001, 'like_rate_per_day': 0.0236562413873333, 'skip_rate_per_day': 0.0154675424455641, 'artist_diversity_gini': 0.3568309885434937, 'avr_session_len': 68.80159166666667}, Base Prediction: 0
+2024-12-30 17:40:58,354 - INFO - 127.0.0.1 - - [30/Dec/2024 17:40:58] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:41:00,392 - INFO - Zapytanie: {'play_rate_per_day': 0.3466549218682312, 'ad_rate_per_day': 0.1064530862430001, 'like_rate_per_day': 0.0236562413873333, 'skip_rate_per_day': 0.0154675424455641, 'artist_diversity_gini': 0.3568309885434937, 'avr_session_len': 68.80159166666667}, Advanced Prediction: 0
+2024-12-30 17:41:00,393 - INFO - 127.0.0.1 - - [30/Dec/2024 17:41:00] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:41:02,404 - INFO - Zapytanie: {'play_rate_per_day': 0.4186778770780578, 'ad_rate_per_day': 0.1320750400877154, 'like_rate_per_day': 0.1307542896868382, 'skip_rate_per_day': 0.2099993137394674, 'artist_diversity_gini': 0.3198434521500024, 'avr_session_len': 98.54147121212122}, Base Prediction: 1
+2024-12-30 17:41:02,405 - INFO - 127.0.0.1 - - [30/Dec/2024 17:41:02] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:41:04,424 - INFO - Zapytanie: {'play_rate_per_day': 0.4186778770780578, 'ad_rate_per_day': 0.1320750400877154, 'like_rate_per_day': 0.1307542896868382, 'skip_rate_per_day': 0.2099993137394674, 'artist_diversity_gini': 0.3198434521500024, 'avr_session_len': 98.54147121212122}, Advanced Prediction: 1
+2024-12-30 17:41:04,425 - INFO - 127.0.0.1 - - [30/Dec/2024 17:41:04] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:41:06,466 - INFO - Zapytanie: {'play_rate_per_day': 0.3260962743127898, 'ad_rate_per_day': 0.1209121017114838, 'like_rate_per_day': 0.0989280832184868, 'skip_rate_per_day': 0.1465601232866471, 'artist_diversity_gini': 0.1026880955767315, 'avr_session_len': 87.88285}, Base Prediction: 1
+2024-12-30 17:41:06,466 - INFO - 127.0.0.1 - - [30/Dec/2024 17:41:06] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:41:08,508 - INFO - Zapytanie: {'play_rate_per_day': 0.3260962743127898, 'ad_rate_per_day': 0.1209121017114838, 'like_rate_per_day': 0.0989280832184868, 'skip_rate_per_day': 0.1465601232866471, 'artist_diversity_gini': 0.1026880955767315, 'avr_session_len': 87.88285}, Advanced Prediction: 1
+2024-12-30 17:41:08,508 - INFO - 127.0.0.1 - - [30/Dec/2024 17:41:08] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:41:10,537 - INFO - Zapytanie: {'play_rate_per_day': 0.308018225554715, 'ad_rate_per_day': 0.0948806141217649, 'like_rate_per_day': 0.0192511390971696, 'skip_rate_per_day': 0.0206262204612532, 'artist_diversity_gini': 0.3047577422577421, 'avr_session_len': 65.52370972222222}, Base Prediction: 0
+2024-12-30 17:41:10,538 - INFO - 127.0.0.1 - - [30/Dec/2024 17:41:10] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:41:12,578 - INFO - Zapytanie: {'play_rate_per_day': 0.308018225554715, 'ad_rate_per_day': 0.0948806141217649, 'like_rate_per_day': 0.0192511390971696, 'skip_rate_per_day': 0.0206262204612532, 'artist_diversity_gini': 0.3047577422577421, 'avr_session_len': 65.52370972222222}, Advanced Prediction: 0
+2024-12-30 17:41:12,578 - INFO - 127.0.0.1 - - [30/Dec/2024 17:41:12] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:41:14,612 - INFO - Zapytanie: {'play_rate_per_day': 0.3827571484648573, 'ad_rate_per_day': 0.1115967133631553, 'like_rate_per_day': 0.030346474686472, 'skip_rate_per_day': 0.0225151263802857, 'artist_diversity_gini': 0.3699833941406771, 'avr_session_len': 83.89716875}, Base Prediction: 0
+2024-12-30 17:41:14,612 - INFO - 127.0.0.1 - - [30/Dec/2024 17:41:14] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:41:16,656 - INFO - Zapytanie: {'play_rate_per_day': 0.3827571484648573, 'ad_rate_per_day': 0.1115967133631553, 'like_rate_per_day': 0.030346474686472, 'skip_rate_per_day': 0.0225151263802857, 'artist_diversity_gini': 0.3699833941406771, 'avr_session_len': 83.89716875}, Advanced Prediction: 0
+2024-12-30 17:41:16,656 - INFO - 127.0.0.1 - - [30/Dec/2024 17:41:16] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:41:18,687 - INFO - Zapytanie: {'play_rate_per_day': 0.3031582096826517, 'ad_rate_per_day': 0.075252037864488, 'like_rate_per_day': 0.0268757278087457, 'skip_rate_per_day': 0.0139753784605477, 'artist_diversity_gini': 0.2978327192044059, 'avr_session_len': 90.83934666666669}, Base Prediction: 0
+2024-12-30 17:41:18,687 - INFO - 127.0.0.1 - - [30/Dec/2024 17:41:18] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:41:20,723 - INFO - Zapytanie: {'play_rate_per_day': 0.3031582096826517, 'ad_rate_per_day': 0.075252037864488, 'like_rate_per_day': 0.0268757278087457, 'skip_rate_per_day': 0.0139753784605477, 'artist_diversity_gini': 0.2978327192044059, 'avr_session_len': 90.83934666666669}, Advanced Prediction: 0
+2024-12-30 17:41:20,723 - INFO - 127.0.0.1 - - [30/Dec/2024 17:41:20] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:41:23,151 - INFO -  * Detected change in 'd:\\SyncVestigat\\2_Studia\\5 sem\\IUM\\gitlaby\\git_vpo_dok_wstep\\ium-projekt-mast-have-24z\\get_microservice_response.py', reloading
+2024-12-30 17:41:23,323 - INFO -  * Restarting with stat
+2024-12-30 17:41:24,621 - WARNING -  * Debugger is active!
+2024-12-30 17:41:24,624 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 17:41:44,745 - INFO -  * Detected change in 'd:\\SyncVestigat\\2_Studia\\5 sem\\IUM\\gitlaby\\git_vpo_dok_wstep\\ium-projekt-mast-have-24z\\get_microservice_response.py', reloading
+2024-12-30 17:41:44,907 - INFO -  * Restarting with stat
+2024-12-30 17:41:46,210 - WARNING -  * Debugger is active!
+2024-12-30 17:41:46,213 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 17:42:04,162 - INFO -  * Detected change in 'd:\\SyncVestigat\\2_Studia\\5 sem\\IUM\\gitlaby\\git_vpo_dok_wstep\\ium-projekt-mast-have-24z\\get_microservice_response.py', reloading
+2024-12-30 17:42:04,332 - INFO -  * Restarting with stat
+2024-12-30 17:42:05,561 - WARNING -  * Debugger is active!
+2024-12-30 17:42:05,565 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 17:42:35,240 - INFO -  * Detected change in 'd:\\SyncVestigat\\2_Studia\\5 sem\\IUM\\gitlaby\\git_vpo_dok_wstep\\ium-projekt-mast-have-24z\\get_microservice_response.py', reloading
+2024-12-30 17:42:35,409 - INFO -  * Restarting with stat
+2024-12-30 17:42:36,676 - WARNING -  * Debugger is active!
+2024-12-30 17:42:36,679 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 17:42:37,504 - INFO - Zapytanie: {'play_rate_per_day': 0.355654510625034, 'ad_rate_per_day': 0.1322305231811023, 'like_rate_per_day': 0.118551503541678, 'skip_rate_per_day': 0.177827255312517, 'artist_diversity_gini': 0.1696410256410256, 'avr_session_len': 82.60946666666666}, Base Prediction: 1
+2024-12-30 17:42:37,504 - INFO - 127.0.0.1 - - [30/Dec/2024 17:42:37] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:43:57,706 - INFO -  * Detected change in 'd:\\SyncVestigat\\2_Studia\\5 sem\\IUM\\gitlaby\\git_vpo_dok_wstep\\ium-projekt-mast-have-24z\\get_microservice_response.py', reloading
+2024-12-30 17:43:57,855 - INFO -  * Restarting with stat
+2024-12-30 17:43:59,130 - WARNING -  * Debugger is active!
+2024-12-30 17:43:59,135 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 17:44:03,434 - INFO -  * Detected change in 'd:\\SyncVestigat\\2_Studia\\5 sem\\IUM\\gitlaby\\git_vpo_dok_wstep\\ium-projekt-mast-have-24z\\get_microservice_response.py', reloading
+2024-12-30 17:44:03,588 - INFO -  * Restarting with stat
+2024-12-30 17:44:04,902 - WARNING -  * Debugger is active!
+2024-12-30 17:44:04,905 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 17:44:35,895 - INFO -  * Detected change in 'd:\\SyncVestigat\\2_Studia\\5 sem\\IUM\\gitlaby\\git_vpo_dok_wstep\\ium-projekt-mast-have-24z\\get_microservice_response.py', reloading
+2024-12-30 17:44:36,063 - INFO -  * Restarting with stat
+2024-12-30 17:44:37,375 - WARNING -  * Debugger is active!
+2024-12-30 17:44:37,377 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 17:46:09,114 - INFO -  * Detected change in 'd:\\SyncVestigat\\2_Studia\\5 sem\\IUM\\gitlaby\\git_vpo_dok_wstep\\ium-projekt-mast-have-24z\\get_microservice_response.py', reloading
+2024-12-30 17:46:09,276 - INFO -  * Restarting with stat
+2024-12-30 17:46:10,743 - WARNING -  * Debugger is active!
+2024-12-30 17:46:10,747 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 17:46:13,332 - INFO - Zapytanie: {'play_rate_per_day': 0.355654510625034, 'ad_rate_per_day': 0.1322305231811023, 'like_rate_per_day': 0.118551503541678, 'skip_rate_per_day': 0.177827255312517, 'artist_diversity_gini': 0.1696410256410256, 'avr_session_len': 82.60946666666666}, Base Prediction: 1
+2024-12-30 17:46:13,332 - INFO - 127.0.0.1 - - [30/Dec/2024 17:46:13] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:46:15,365 - INFO - Zapytanie: {'play_rate_per_day': 0.355654510625034, 'ad_rate_per_day': 0.1322305231811023, 'like_rate_per_day': 0.118551503541678, 'skip_rate_per_day': 0.177827255312517, 'artist_diversity_gini': 0.1696410256410256, 'avr_session_len': 82.60946666666666}, Advanced Prediction: 1
+2024-12-30 17:46:15,366 - INFO - 127.0.0.1 - - [30/Dec/2024 17:46:15] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:46:17,405 - INFO - Zapytanie: {'play_rate_per_day': 0.2325247081051456, 'ad_rate_per_day': 0.0930098832420582, 'like_rate_per_day': 0.0748122973903512, 'skip_rate_per_day': 0.1031196531596732, 'artist_diversity_gini': 0.1941699604743081, 'avr_session_len': 75.23553999999999}, Base Prediction: 1
+2024-12-30 17:46:17,405 - INFO - 127.0.0.1 - - [30/Dec/2024 17:46:17] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:46:19,448 - INFO - Zapytanie: {'play_rate_per_day': 0.2325247081051456, 'ad_rate_per_day': 0.0930098832420582, 'like_rate_per_day': 0.0748122973903512, 'skip_rate_per_day': 0.1031196531596732, 'artist_diversity_gini': 0.1941699604743081, 'avr_session_len': 75.23553999999999}, Advanced Prediction: 1
+2024-12-30 17:46:19,448 - INFO - 127.0.0.1 - - [30/Dec/2024 17:46:19] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:46:21,479 - INFO - Zapytanie: {'play_rate_per_day': 0.2727292045867817, 'ad_rate_per_day': 0.0825693922143467, 'like_rate_per_day': 0.0863225464059079, 'skip_rate_per_day': 0.1438709106765133, 'artist_diversity_gini': 0.2476444334242498, 'avr_session_len': 91.73941875}, Base Prediction: 1
+2024-12-30 17:46:21,479 - INFO - 127.0.0.1 - - [30/Dec/2024 17:46:21] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:46:23,515 - INFO - Zapytanie: {'play_rate_per_day': 0.2727292045867817, 'ad_rate_per_day': 0.0825693922143467, 'like_rate_per_day': 0.0863225464059079, 'skip_rate_per_day': 0.1438709106765133, 'artist_diversity_gini': 0.2476444334242498, 'avr_session_len': 91.73941875}, Advanced Prediction: 0
+2024-12-30 17:46:23,516 - INFO - 127.0.0.1 - - [30/Dec/2024 17:46:23] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:46:25,546 - INFO - Zapytanie: {'play_rate_per_day': 0.926817728119964, 'ad_rate_per_day': 0.4774515569102844, 'like_rate_per_day': 0.4212807855090745, 'skip_rate_per_day': 0.5617077140120994, 'artist_diversity_gini': 0.1331168831168829, 'avr_session_len': 49.9085}, Base Prediction: 1
+2024-12-30 17:46:25,546 - INFO - 127.0.0.1 - - [30/Dec/2024 17:46:25] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:46:27,582 - INFO - Zapytanie: {'play_rate_per_day': 0.926817728119964, 'ad_rate_per_day': 0.4774515569102844, 'like_rate_per_day': 0.4212807855090745, 'skip_rate_per_day': 0.5617077140120994, 'artist_diversity_gini': 0.1331168831168829, 'avr_session_len': 49.9085}, Advanced Prediction: 1
+2024-12-30 17:46:27,582 - INFO - 127.0.0.1 - - [30/Dec/2024 17:46:27] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:46:29,596 - INFO - Zapytanie: {'play_rate_per_day': 0.3466549218682312, 'ad_rate_per_day': 0.1064530862430001, 'like_rate_per_day': 0.0236562413873333, 'skip_rate_per_day': 0.0154675424455641, 'artist_diversity_gini': 0.3568309885434937, 'avr_session_len': 68.80159166666667}, Base Prediction: 0
+2024-12-30 17:46:29,597 - INFO - 127.0.0.1 - - [30/Dec/2024 17:46:29] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:46:31,634 - INFO - Zapytanie: {'play_rate_per_day': 0.3466549218682312, 'ad_rate_per_day': 0.1064530862430001, 'like_rate_per_day': 0.0236562413873333, 'skip_rate_per_day': 0.0154675424455641, 'artist_diversity_gini': 0.3568309885434937, 'avr_session_len': 68.80159166666667}, Advanced Prediction: 0
+2024-12-30 17:46:31,634 - INFO - 127.0.0.1 - - [30/Dec/2024 17:46:31] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:46:33,663 - INFO - Zapytanie: {'play_rate_per_day': 0.4186778770780578, 'ad_rate_per_day': 0.1320750400877154, 'like_rate_per_day': 0.1307542896868382, 'skip_rate_per_day': 0.2099993137394674, 'artist_diversity_gini': 0.3198434521500024, 'avr_session_len': 98.54147121212122}, Base Prediction: 1
+2024-12-30 17:46:33,663 - INFO - 127.0.0.1 - - [30/Dec/2024 17:46:33] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:46:35,700 - INFO - Zapytanie: {'play_rate_per_day': 0.4186778770780578, 'ad_rate_per_day': 0.1320750400877154, 'like_rate_per_day': 0.1307542896868382, 'skip_rate_per_day': 0.2099993137394674, 'artist_diversity_gini': 0.3198434521500024, 'avr_session_len': 98.54147121212122}, Advanced Prediction: 1
+2024-12-30 17:46:35,701 - INFO - 127.0.0.1 - - [30/Dec/2024 17:46:35] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:46:37,727 - INFO - Zapytanie: {'play_rate_per_day': 0.3260962743127898, 'ad_rate_per_day': 0.1209121017114838, 'like_rate_per_day': 0.0989280832184868, 'skip_rate_per_day': 0.1465601232866471, 'artist_diversity_gini': 0.1026880955767315, 'avr_session_len': 87.88285}, Base Prediction: 1
+2024-12-30 17:46:37,728 - INFO - 127.0.0.1 - - [30/Dec/2024 17:46:37] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:46:39,768 - INFO - Zapytanie: {'play_rate_per_day': 0.3260962743127898, 'ad_rate_per_day': 0.1209121017114838, 'like_rate_per_day': 0.0989280832184868, 'skip_rate_per_day': 0.1465601232866471, 'artist_diversity_gini': 0.1026880955767315, 'avr_session_len': 87.88285}, Advanced Prediction: 1
+2024-12-30 17:46:39,769 - INFO - 127.0.0.1 - - [30/Dec/2024 17:46:39] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:46:41,796 - INFO - Zapytanie: {'play_rate_per_day': 0.308018225554715, 'ad_rate_per_day': 0.0948806141217649, 'like_rate_per_day': 0.0192511390971696, 'skip_rate_per_day': 0.0206262204612532, 'artist_diversity_gini': 0.3047577422577421, 'avr_session_len': 65.52370972222222}, Base Prediction: 0
+2024-12-30 17:46:41,796 - INFO - 127.0.0.1 - - [30/Dec/2024 17:46:41] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:46:43,828 - INFO - Zapytanie: {'play_rate_per_day': 0.308018225554715, 'ad_rate_per_day': 0.0948806141217649, 'like_rate_per_day': 0.0192511390971696, 'skip_rate_per_day': 0.0206262204612532, 'artist_diversity_gini': 0.3047577422577421, 'avr_session_len': 65.52370972222222}, Advanced Prediction: 0
+2024-12-30 17:46:43,828 - INFO - 127.0.0.1 - - [30/Dec/2024 17:46:43] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:46:45,868 - INFO - Zapytanie: {'play_rate_per_day': 0.3827571484648573, 'ad_rate_per_day': 0.1115967133631553, 'like_rate_per_day': 0.030346474686472, 'skip_rate_per_day': 0.0225151263802857, 'artist_diversity_gini': 0.3699833941406771, 'avr_session_len': 83.89716875}, Base Prediction: 0
+2024-12-30 17:46:45,868 - INFO - 127.0.0.1 - - [30/Dec/2024 17:46:45] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:46:46,625 - INFO -  * Detected change in 'd:\\SyncVestigat\\2_Studia\\5 sem\\IUM\\gitlaby\\git_vpo_dok_wstep\\ium-projekt-mast-have-24z\\get_microservice_response.py', reloading
+2024-12-30 17:46:46,790 - INFO -  * Restarting with stat
+2024-12-30 17:46:48,137 - WARNING -  * Debugger is active!
+2024-12-30 17:46:48,140 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 17:46:48,206 - INFO - Zapytanie: {'play_rate_per_day': 0.3827571484648573, 'ad_rate_per_day': 0.1115967133631553, 'like_rate_per_day': 0.030346474686472, 'skip_rate_per_day': 0.0225151263802857, 'artist_diversity_gini': 0.3699833941406771, 'avr_session_len': 83.89716875}, Advanced Prediction: 0
+2024-12-30 17:46:48,207 - INFO - 127.0.0.1 - - [30/Dec/2024 17:46:48] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:46:50,244 - INFO - Zapytanie: {'play_rate_per_day': 0.3031582096826517, 'ad_rate_per_day': 0.075252037864488, 'like_rate_per_day': 0.0268757278087457, 'skip_rate_per_day': 0.0139753784605477, 'artist_diversity_gini': 0.2978327192044059, 'avr_session_len': 90.83934666666669}, Base Prediction: 0
+2024-12-30 17:46:50,245 - INFO - 127.0.0.1 - - [30/Dec/2024 17:46:50] "POST /predict_base HTTP/1.1" 200 -
+2024-12-30 17:46:50,351 - INFO -  * Detected change in 'd:\\SyncVestigat\\2_Studia\\5 sem\\IUM\\gitlaby\\git_vpo_dok_wstep\\ium-projekt-mast-have-24z\\get_microservice_response.py', reloading
+2024-12-30 17:46:50,511 - INFO -  * Restarting with stat
+2024-12-30 17:46:51,687 - WARNING -  * Debugger is active!
+2024-12-30 17:46:51,690 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 17:46:52,267 - INFO - Zapytanie: {'play_rate_per_day': 0.3031582096826517, 'ad_rate_per_day': 0.075252037864488, 'like_rate_per_day': 0.0268757278087457, 'skip_rate_per_day': 0.0139753784605477, 'artist_diversity_gini': 0.2978327192044059, 'avr_session_len': 90.83934666666669}, Advanced Prediction: 0
+2024-12-30 17:46:52,267 - INFO - 127.0.0.1 - - [30/Dec/2024 17:46:52] "POST /predict_advanced HTTP/1.1" 200 -
+2024-12-30 17:52:41,090 - INFO -  * Detected change in 'd:\\SyncVestigat\\2_Studia\\5 sem\\IUM\\gitlaby\\git_vpo_dok_wstep\\ium-projekt-mast-have-24z\\choose_model_atributes.py', reloading
+2024-12-30 17:52:41,343 - INFO -  * Restarting with stat
+2024-12-30 17:52:42,813 - WARNING -  * Debugger is active!
+2024-12-30 17:52:42,816 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 17:52:51,512 - INFO -  * Detected change in 'd:\\SyncVestigat\\2_Studia\\5 sem\\IUM\\gitlaby\\git_vpo_dok_wstep\\ium-projekt-mast-have-24z\\choose_model_atributes.py', reloading
+2024-12-30 17:52:51,734 - INFO -  * Restarting with stat
+2024-12-30 17:52:53,018 - WARNING -  * Debugger is active!
+2024-12-30 17:52:53,020 - INFO -  * Debugger PIN: 704-756-622
+2024-12-30 17:53:15,626 - INFO -  * Detected change in 'd:\\SyncVestigat\\2_Studia\\5 sem\\IUM\\gitlaby\\git_vpo_dok_wstep\\ium-projekt-mast-have-24z\\choose_model_atributes.py', reloading
+2024-12-30 17:53:15,852 - INFO -  * Restarting with stat
+2024-12-30 17:53:17,179 - WARNING -  * Debugger is active!
+2024-12-30 17:53:17,182 - INFO -  * Debugger PIN: 704-756-622
