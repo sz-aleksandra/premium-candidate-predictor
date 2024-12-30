@@ -1,20 +1,6 @@
-
 import pandas as pd
-import numpy as np
-import pickle
-import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler, LabelEncoder
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import classification_report, accuracy_score, roc_auc_score
 import requests
-from sklearn.model_selection import train_test_split
-from tqdm import tqdm
-from sklearn.metrics import confusion_matrix, precision_score, accuracy_score, f1_score
-from scipy import stats
-import json
-from numpy import var
-
+from sklearn.metrics import accuracy_score
 
 def load_and_preprocess_data(filepath):
     data = pd.read_csv(filepath, encoding_errors='ignore')
@@ -24,17 +10,31 @@ def get_base_prediction_from_microservice(X):
     response = requests.post("http://localhost:8080/predict_base", json=X)
     return response.json()['base_prediction']
 
-
+def get_advanced_prediction_from_microservice(X):
+    response = requests.post("http://localhost:8080/predict_advanced", json=X)
+    return response.json()['advanced_prediction']
 
 def main():
-    X_train = load_and_preprocess_data('content/custom_data/X_train.csv')
-    X_train = X_train.to_dict(orient='records')
-    X_val = load_and_preprocess_data('content/custom_data/X_val.csv')
-    X_val = X_val.to_dict(orient='records')
-    Y_train = load_and_preprocess_data('content/custom_data/Y_train.csv')
-    Y_val = load_and_preprocess_data('content/custom_data/Y_val.csv')
-
+    NUMBER_OF_SAMPLES_TO_TEST = 10
+    X_test = load_and_preprocess_data('content/custom_data/X_test.csv')
+    print(f"Number of all available test samples: {len(X_test)}")
+    Y_test = load_and_preprocess_data('content/custom_data/Y_test.csv').to_dict(orient='records')
+    X_test = X_test.head(NUMBER_OF_SAMPLES_TO_TEST).to_dict(orient='records')
     
+    Y_base = []
+    Y_adv = []
+    Y_data = []
+    for i, entry in enumerate(X_test):
+        base_pred = get_base_prediction_from_microservice(entry)
+        adv_pred = get_advanced_prediction_from_microservice(entry)
+        y = Y_test[i]["premium_user"]
+        Y_base.append(base_pred)
+        Y_adv.append(adv_pred)
+        Y_data.append(y)
+        print(f"Sample {i}: Base={base_pred}, Advanced={adv_pred}, Data={y}")
+    print(f"\nACCURACY:")
+    print(f"Base model: {accuracy_score(Y_data, Y_base)}")
+    print(f"Advanced model: {accuracy_score(Y_data, Y_adv)}")
 
 
 if __name__ == "__main__":
