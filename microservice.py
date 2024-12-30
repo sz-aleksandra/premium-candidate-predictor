@@ -8,6 +8,7 @@ BASE_MODEL_PATH = 'content/results/logistic_regression.pkl'
 ADVANCED_MODEL_PATH = 'content/results/random_forest.pkl'
 SCALER_PATH = 'content/results/data_scaler.pkl'
 ATTRIBUTES_NEEDED_INFO_PATH = 'content/custom_data/attributes_required.json'
+LOGS_PATH = 'content/results/ab_test.log'
 HOSTING_IP = '0.0.0.0'
 HOSTING_PORT = 8080
 
@@ -17,7 +18,7 @@ HOSTING_PORT = 8080
 app = Flask(__name__)
 
 logging.basicConfig(
-    filename='content/results/ab_test.log', 
+    filename=LOGS_PATH, 
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
