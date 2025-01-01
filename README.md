@@ -24,7 +24,5 @@ pip install tqdm scikit-learn numpy python-dateutil flask pandas matplotlib requ
 1. `modeling_dataset_creation.py` - tworzenie zbiorów danych
 2. `split_data_to_train_validate_test.py` - podział na zbiory treningowy/walidacyjny/testowy 
 
-
-
 ### Pomocnicze
 3. `choose_model_attributes.py` - wybór atrybutów na podstawie wag znormalizowanego modelu
