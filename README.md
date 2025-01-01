@@ -1,4 +1,7 @@
 # IUM - projekt 24Z
+## Oryginalna treść zadania
+**Zadanie 10:**  
+“Jakiś czas temu wprowadziliśmy konta premium, które uwalniają użytkowników od słuchania reklam. Nie są one jednak jeszcze zbyt popularne – czy możemy się dowiedzieć, które osoby są bardziej skłonne do zakupu takiego konta?”
 ## Autorzy
 - Gustaw Malinowski
 - Aleksandra Szymańska
