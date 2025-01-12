@@ -45,7 +45,7 @@ def main():
     Y_train = load_and_preprocess_data('content/custom_data/Y_train.csv')
     Y_val = load_and_preprocess_data('content/custom_data/Y_val.csv')
 
-    scaler = create_scaler(X_train,Y_train, "data_scaler")
+    scaler = create_scaler(X_train.values,Y_train.values, "data_scaler")
 
     lr_model = LogisticRegression()
     lr_model = train_and_evaluate_model(X_train, X_val, Y_train, Y_val, scaler,lr_model, "Logistic Regression")
