@@ -2,6 +2,7 @@ import pickle
 from flask import Flask, request, jsonify
 import logging
 import json
+from random import choice, seed
 
 
 BASE_MODEL_PATH = 'content/results/logistic_regression.pkl'
@@ -11,7 +12,10 @@ ATTRIBUTES_NEEDED_INFO_PATH = 'content/custom_data/attributes_required.json'
 LOGS_PATH = 'content/results/ab_test.log'
 HOSTING_IP = '0.0.0.0'
 HOSTING_PORT = 8080
+CONST_SEED = 77
 
+seed(CONST_SEED)
+np.random.seed(CONST_SEED)
 
 
 
@@ -50,18 +54,16 @@ def predict():
             missing_feature = e.args[0]
             return jsonify({"error": f"Brakuje wymaganej cechy: {missing_feature}"}), 400
         features_scaled = scaler.transform([features])
-        base_prediction = base_model.predict(features_scaled)[0]
-        advanced_prediction = advanced_model.predict(features_scaled)[0]
+        selected_model = choice([base_model, advanced_model])
+
+        prediction = selected_model.predict(features_scaled)[0]
 
         logging.info(
-            f"Zapytanie: {data}, Base Prediction: {base_prediction}, Advanced Prediction: {advanced_prediction}"
+            f"Zapytanie: {data}, Model: {selected_model}, Prediction: {prediction}"
         )
 
         return jsonify({
-            "predictions": {
-                "base": float(base_prediction),
-                "advanced": float(advanced_prediction)
-            }
+            "prediction": float(prediction) 
         })
 
     except Exception as e:
