@@ -1,8 +1,10 @@
 import pickle
+import os
 from flask import Flask, request, jsonify
 import logging
 import json
 from random import choice, seed
+import numpy as np
 
 
 BASE_MODEL_PATH = 'content/results/logistic_regression.pkl'
