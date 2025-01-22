@@ -1,614 +1,115 @@
 [
     {
-        "seed": 1,
         "base": {
             "confusion_matrix": [
                 [
-                    75,
-                    4
+                    74,
+                    5
                 ],
                 [
                     26,
-                    45
+                    47
                 ]
             ],
-            "precision": 91.837,
-            "accuracy": 80.0,
-            "f1_score": 75.0
+            "precision": 90.385,
+            "accuracy": 79.605,
+            "f1_score": 75.2
         },
         "advanced": {
             "confusion_matrix": [
                 [
-                    76,
+                    73,
+                    6
+                ],
+                [
+                    22,
+                    47
+                ]
+            ],
+            "precision": 88.679,
+            "accuracy": 81.081,
+            "f1_score": 77.049
+        }
+    },
+    {
+        "base": {
+            "confusion_matrix": [
+                [
+                    133,
+                    7
+                ],
+                [
+                    60,
+                    96
+                ]
+            ],
+            "precision": 93.204,
+            "accuracy": 77.365,
+            "f1_score": 74.131
+        },
+        "advanced": {
+            "confusion_matrix": [
+                [
+                    168,
+                    8
+                ],
+                [
+                    38,
+                    90
+                ]
+            ],
+            "precision": 91.837,
+            "accuracy": 84.868,
+            "f1_score": 79.646
+        }
+    },
+    {
+        "base": {
+            "confusion_matrix": [
+                [
+                    87,
+                    6
+                ],
+                [
+                    28,
+                    49
+                ]
+            ],
+            "precision": 89.091,
+            "accuracy": 80.0,
+            "f1_score": 74.242
+        },
+        "advanced": {
+            "confusion_matrix": [
+                [
+                    62,
                     3
                 ],
                 [
                     19,
-                    52
-                ]
-            ],
-            "precision": 94.545,
-            "accuracy": 85.333,
-            "f1_score": 82.54
-        }
-    },
-    {
-        "seed": 2,
-        "base": {
-            "confusion_matrix": [
-                [
-                    66,
-                    5
-                ],
-                [
-                    32,
-                    47
-                ]
-            ],
-            "precision": 90.385,
-            "accuracy": 75.333,
-            "f1_score": 71.756
-        },
-        "advanced": {
-            "confusion_matrix": [
-                [
-                    82,
-                    5
-                ],
-                [
-                    11,
-                    52
-                ]
-            ],
-            "precision": 91.228,
-            "accuracy": 89.333,
-            "f1_score": 86.667
-        }
-    },
-    {
-        "seed": 3,
-        "base": {
-            "confusion_matrix": [
-                [
-                    82,
-                    1
-                ],
-                [
-                    22,
-                    45
-                ]
-            ],
-            "precision": 97.826,
-            "accuracy": 84.667,
-            "f1_score": 79.646
-        },
-        "advanced": {
-            "confusion_matrix": [
-                [
-                    68,
-                    7
-                ],
-                [
-                    18,
-                    57
-                ]
-            ],
-            "precision": 89.062,
-            "accuracy": 83.333,
-            "f1_score": 82.014
-        }
-    },
-    {
-        "seed": 4,
-        "base": {
-            "confusion_matrix": [
-                [
-                    85,
-                    4
-                ],
-                [
-                    22,
-                    39
-                ]
-            ],
-            "precision": 90.698,
-            "accuracy": 82.667,
-            "f1_score": 75.0
-        },
-        "advanced": {
-            "confusion_matrix": [
-                [
-                    65,
-                    4
-                ],
-                [
-                    20,
-                    61
-                ]
-            ],
-            "precision": 93.846,
-            "accuracy": 84.0,
-            "f1_score": 83.562
-        }
-    },
-    {
-        "seed": 5,
-        "base": {
-            "confusion_matrix": [
-                [
-                    71,
-                    5
-                ],
-                [
-                    27,
-                    47
-                ]
-            ],
-            "precision": 90.385,
-            "accuracy": 78.667,
-            "f1_score": 74.603
-        },
-        "advanced": {
-            "confusion_matrix": [
-                [
-                    77,
-                    5
-                ],
-                [
-                    16,
-                    52
-                ]
-            ],
-            "precision": 91.228,
-            "accuracy": 86.0,
-            "f1_score": 83.2
-        }
-    },
-    {
-        "seed": 6,
-        "base": {
-            "confusion_matrix": [
-                [
-                    70,
-                    8
-                ],
-                [
-                    24,
-                    48
-                ]
-            ],
-            "precision": 85.714,
-            "accuracy": 78.667,
-            "f1_score": 75.0
-        },
-        "advanced": {
-            "confusion_matrix": [
-                [
-                    79,
-                    1
-                ],
-                [
-                    21,
-                    49
-                ]
-            ],
-            "precision": 98.0,
-            "accuracy": 85.333,
-            "f1_score": 81.667
-        }
-    },
-    {
-        "seed": 7,
-        "base": {
-            "confusion_matrix": [
-                [
-                    65,
-                    3
-                ],
-                [
-                    28,
-                    54
-                ]
-            ],
-            "precision": 94.737,
-            "accuracy": 79.333,
-            "f1_score": 77.698
-        },
-        "advanced": {
-            "confusion_matrix": [
-                [
-                    86,
-                    4
-                ],
-                [
-                    14,
                     46
                 ]
             ],
-            "precision": 92.0,
-            "accuracy": 88.0,
-            "f1_score": 83.636
+            "precision": 93.878,
+            "accuracy": 83.077,
+            "f1_score": 80.702
         }
     },
     {
-        "seed": 8,
         "base": {
             "confusion_matrix": [
                 [
-                    71,
-                    5
-                ],
-                [
-                    29,
-                    45
-                ]
-            ],
-            "precision": 90.0,
-            "accuracy": 77.333,
-            "f1_score": 72.581
-        },
-        "advanced": {
-            "confusion_matrix": [
-                [
-                    77,
-                    5
-                ],
-                [
-                    14,
-                    54
-                ]
-            ],
-            "precision": 91.525,
-            "accuracy": 87.333,
-            "f1_score": 85.039
-        }
-    },
-    {
-        "seed": 9,
-        "base": {
-            "confusion_matrix": [
-                [
-                    68,
-                    6
-                ],
-                [
-                    31,
-                    45
-                ]
-            ],
-            "precision": 88.235,
-            "accuracy": 75.333,
-            "f1_score": 70.866
-        },
-        "advanced": {
-            "confusion_matrix": [
-                [
-                    79,
-                    5
-                ],
-                [
-                    16,
-                    50
-                ]
-            ],
-            "precision": 90.909,
-            "accuracy": 86.0,
-            "f1_score": 82.645
-        }
-    },
-    {
-        "seed": 10,
-        "base": {
-            "confusion_matrix": [
-                [
-                    78,
-                    2
-                ],
-                [
-                    29,
-                    41
-                ]
-            ],
-            "precision": 95.349,
-            "accuracy": 79.333,
-            "f1_score": 72.566
-        },
-        "advanced": {
-            "confusion_matrix": [
-                [
-                    73,
-                    5
-                ],
-                [
-                    18,
-                    54
-                ]
-            ],
-            "precision": 91.525,
-            "accuracy": 84.667,
-            "f1_score": 82.443
-        }
-    },
-    {
-        "seed": 11,
-        "base": {
-            "confusion_matrix": [
-                [
-                    72,
-                    3
-                ],
-                [
-                    30,
-                    45
-                ]
-            ],
-            "precision": 93.75,
-            "accuracy": 78.0,
-            "f1_score": 73.171
-        },
-        "advanced": {
-            "confusion_matrix": [
-                [
-                    76,
-                    7
-                ],
-                [
-                    13,
-                    54
-                ]
-            ],
-            "precision": 88.525,
-            "accuracy": 86.667,
-            "f1_score": 84.375
-        }
-    },
-    {
-        "seed": 12,
-        "base": {
-            "confusion_matrix": [
-                [
-                    79,
-                    5
-                ],
-                [
-                    22,
-                    44
-                ]
-            ],
-            "precision": 89.796,
-            "accuracy": 82.0,
-            "f1_score": 76.522
-        },
-        "advanced": {
-            "confusion_matrix": [
-                [
-                    72,
-                    2
-                ],
-                [
-                    18,
-                    58
-                ]
-            ],
-            "precision": 96.667,
-            "accuracy": 86.667,
-            "f1_score": 85.294
-        }
-    },
-    {
-        "seed": 13,
-        "base": {
-            "confusion_matrix": [
-                [
-                    75,
-                    6
-                ],
-                [
-                    24,
-                    45
-                ]
-            ],
-            "precision": 88.235,
-            "accuracy": 80.0,
-            "f1_score": 75.0
-        },
-        "advanced": {
-            "confusion_matrix": [
-                [
-                    73,
+                    69,
                     4
                 ],
                 [
-                    15,
-                    58
-                ]
-            ],
-            "precision": 93.548,
-            "accuracy": 87.333,
-            "f1_score": 85.926
-        }
-    },
-    {
-        "seed": 14,
-        "base": {
-            "confusion_matrix": [
-                [
-                    80,
-                    2
-                ],
-                [
-                    26,
-                    42
-                ]
-            ],
-            "precision": 95.455,
-            "accuracy": 81.333,
-            "f1_score": 75.0
-        },
-        "advanced": {
-            "confusion_matrix": [
-                [
-                    73,
-                    3
-                ],
-                [
-                    17,
-                    57
-                ]
-            ],
-            "precision": 95.0,
-            "accuracy": 86.667,
-            "f1_score": 85.075
-        }
-    },
-    {
-        "seed": 15,
-        "base": {
-            "confusion_matrix": [
-                [
-                    76,
-                    4
-                ],
-                [
-                    25,
-                    45
-                ]
-            ],
-            "precision": 91.837,
-            "accuracy": 80.667,
-            "f1_score": 75.63
-        },
-        "advanced": {
-            "confusion_matrix": [
-                [
-                    76,
-                    2
-                ],
-                [
-                    18,
-                    54
-                ]
-            ],
-            "precision": 96.429,
-            "accuracy": 86.667,
-            "f1_score": 84.375
-        }
-    },
-    {
-        "seed": 16,
-        "base": {
-            "confusion_matrix": [
-                [
-                    80,
-                    5
-                ],
-                [
-                    28,
-                    37
-                ]
-            ],
-            "precision": 88.095,
-            "accuracy": 78.0,
-            "f1_score": 69.159
-        },
-        "advanced": {
-            "confusion_matrix": [
-                [
-                    71,
-                    2
-                ],
-                [
-                    16,
-                    61
-                ]
-            ],
-            "precision": 96.825,
-            "accuracy": 88.0,
-            "f1_score": 87.143
-        }
-    },
-    {
-        "seed": 17,
-        "base": {
-            "confusion_matrix": [
-                [
-                    77,
-                    3
-                ],
-                [
-                    27,
+                    21,
                     43
                 ]
             ],
-            "precision": 93.478,
-            "accuracy": 80.0,
-            "f1_score": 74.138
-        },
-        "advanced": {
-            "confusion_matrix": [
-                [
-                    72,
-                    6
-                ],
-                [
-                    17,
-                    55
-                ]
-            ],
-            "precision": 90.164,
-            "accuracy": 84.667,
-            "f1_score": 82.707
-        }
-    },
-    {
-        "seed": 18,
-        "base": {
-            "confusion_matrix": [
-                [
-                    74,
-                    6
-                ],
-                [
-                    29,
-                    41
-                ]
-            ],
-            "precision": 87.234,
-            "accuracy": 76.667,
-            "f1_score": 70.085
-        },
-        "advanced": {
-            "confusion_matrix": [
-                [
-                    74,
-                    4
-                ],
-                [
-                    15,
-                    57
-                ]
-            ],
-            "precision": 93.443,
-            "accuracy": 87.333,
-            "f1_score": 85.714
-        }
-    },
-    {
-        "seed": 19,
-        "base": {
-            "confusion_matrix": [
-                [
-                    70,
-                    3
-                ],
-                [
-                    29,
-                    48
-                ]
-            ],
-            "precision": 94.118,
-            "accuracy": 78.667,
-            "f1_score": 75.0
+            "precision": 91.489,
+            "accuracy": 81.752,
+            "f1_score": 77.477
         },
         "advanced": {
             "confusion_matrix": [
@@ -617,376 +118,205 @@
                     4
                 ],
                 [
-                    11,
-                    54
+                    22,
+                    56
                 ]
             ],
-            "precision": 93.103,
-            "accuracy": 90.0,
-            "f1_score": 87.805
+            "precision": 93.333,
+            "accuracy": 84.049,
+            "f1_score": 81.159
         }
     },
     {
-        "seed": 20,
         "base": {
             "confusion_matrix": [
                 [
-                    82,
-                    2
-                ],
-                [
-                    27,
-                    39
-                ]
-            ],
-            "precision": 95.122,
-            "accuracy": 80.667,
-            "f1_score": 72.897
-        },
-        "advanced": {
-            "confusion_matrix": [
-                [
-                    69,
-                    5
-                ],
-                [
-                    21,
-                    55
-                ]
-            ],
-            "precision": 91.667,
-            "accuracy": 82.667,
-            "f1_score": 80.882
-        }
-    },
-    {
-        "seed": 21,
-        "base": {
-            "confusion_matrix": [
-                [
-                    72,
-                    1
-                ],
-                [
-                    33,
-                    44
-                ]
-            ],
-            "precision": 97.778,
-            "accuracy": 77.333,
-            "f1_score": 72.131
-        },
-        "advanced": {
-            "confusion_matrix": [
-                [
-                    77,
-                    8
-                ],
-                [
-                    13,
-                    52
-                ]
-            ],
-            "precision": 86.667,
-            "accuracy": 86.0,
-            "f1_score": 83.2
-        }
-    },
-    {
-        "seed": 22,
-        "base": {
-            "confusion_matrix": [
-                [
-                    79,
+                    75,
                     5
                 ],
                 [
                     23,
-                    43
+                    44
                 ]
             ],
-            "precision": 89.583,
-            "accuracy": 81.333,
-            "f1_score": 75.439
+            "precision": 89.796,
+            "accuracy": 80.952,
+            "f1_score": 75.862
         },
         "advanced": {
             "confusion_matrix": [
                 [
-                    69,
+                    74,
+                    4
+                ],
+                [
+                    22,
+                    53
+                ]
+            ],
+            "precision": 92.982,
+            "accuracy": 83.007,
+            "f1_score": 80.303
+        }
+    },
+    {
+        "base": {
+            "confusion_matrix": [
+                [
+                    81,
                     5
                 ],
                 [
-                    16,
+                    28,
+                    36
+                ]
+            ],
+            "precision": 87.805,
+            "accuracy": 78.0,
+            "f1_score": 68.571
+        },
+        "advanced": {
+            "confusion_matrix": [
+                [
+                    68,
+                    4
+                ],
+                [
+                    18,
                     60
                 ]
             ],
-            "precision": 92.308,
-            "accuracy": 86.0,
-            "f1_score": 85.106
+            "precision": 93.75,
+            "accuracy": 85.333,
+            "f1_score": 84.507
         }
     },
     {
-        "seed": 23,
         "base": {
             "confusion_matrix": [
                 [
-                    69,
+                    73,
                     5
                 ],
                 [
-                    27,
-                    49
+                    26,
+                    46
                 ]
             ],
-            "precision": 90.741,
-            "accuracy": 78.667,
-            "f1_score": 75.385
-        },
-        "advanced": {
-            "confusion_matrix": [
-                [
-                    79,
-                    5
-                ],
-                [
-                    19,
-                    47
-                ]
-            ],
-            "precision": 90.385,
-            "accuracy": 84.0,
-            "f1_score": 79.661
-        }
-    },
-    {
-        "seed": 24,
-        "base": {
-            "confusion_matrix": [
-                [
-                    85,
-                    4
-                ],
-                [
-                    27,
-                    34
-                ]
-            ],
-            "precision": 89.474,
+            "precision": 90.196,
             "accuracy": 79.333,
-            "f1_score": 68.687
-        },
-        "advanced": {
-            "confusion_matrix": [
-                [
-                    64,
-                    5
-                ],
-                [
-                    19,
-                    62
-                ]
-            ],
-            "precision": 92.537,
-            "accuracy": 84.0,
-            "f1_score": 83.784
-        }
-    },
-    {
-        "seed": 25,
-        "base": {
-            "confusion_matrix": [
-                [
-                    72,
-                    4
-                ],
-                [
-                    25,
-                    49
-                ]
-            ],
-            "precision": 92.453,
-            "accuracy": 80.667,
-            "f1_score": 77.165
+            "f1_score": 74.797
         },
         "advanced": {
             "confusion_matrix": [
                 [
                     75,
-                    7
+                    5
                 ],
                 [
-                    17,
+                    19,
                     51
                 ]
             ],
-            "precision": 87.931,
+            "precision": 91.071,
             "accuracy": 84.0,
             "f1_score": 80.952
         }
     },
     {
-        "seed": 26,
         "base": {
             "confusion_matrix": [
                 [
-                    78,
-                    4
+                    76,
+                    3
                 ],
                 [
-                    21,
-                    47
+                    23,
+                    40
                 ]
             ],
-            "precision": 92.157,
-            "accuracy": 83.333,
-            "f1_score": 78.992
+            "precision": 93.023,
+            "accuracy": 81.69,
+            "f1_score": 75.472
         },
         "advanced": {
             "confusion_matrix": [
                 [
                     73,
-                    3
+                    6
                 ],
                 [
                     19,
-                    55
+                    60
                 ]
             ],
-            "precision": 94.828,
-            "accuracy": 85.333,
-            "f1_score": 83.333
+            "precision": 90.909,
+            "accuracy": 84.177,
+            "f1_score": 82.759
         }
     },
     {
-        "seed": 27,
         "base": {
             "confusion_matrix": [
                 [
                     71,
-                    8
+                    6
                 ],
                 [
-                    25,
-                    46
+                    29,
+                    55
                 ]
             ],
-            "precision": 85.185,
-            "accuracy": 78.0,
-            "f1_score": 73.6
+            "precision": 90.164,
+            "accuracy": 78.261,
+            "f1_score": 75.862
+        },
+        "advanced": {
+            "confusion_matrix": [
+                [
+                    76,
+                    5
+                ],
+                [
+                    16,
+                    42
+                ]
+            ],
+            "precision": 89.362,
+            "accuracy": 84.892,
+            "f1_score": 80.0
+        }
+    },
+    {
+        "base": {
+            "confusion_matrix": [
+                [
+                    69,
+                    5
+                ],
+                [
+                    20,
+                    36
+                ]
+            ],
+            "precision": 87.805,
+            "accuracy": 80.769,
+            "f1_score": 74.227
         },
         "advanced": {
             "confusion_matrix": [
                 [
                     78,
-                    1
-                ],
-                [
-                    15,
-                    56
-                ]
-            ],
-            "precision": 98.246,
-            "accuracy": 89.333,
-            "f1_score": 87.5
-        }
-    },
-    {
-        "seed": 28,
-        "base": {
-            "confusion_matrix": [
-                [
-                    80,
-                    5
-                ],
-                [
-                    25,
-                    40
-                ]
-            ],
-            "precision": 88.889,
-            "accuracy": 80.0,
-            "f1_score": 72.727
-        },
-        "advanced": {
-            "confusion_matrix": [
-                [
-                    69,
-                    4
-                ],
-                [
-                    20,
-                    57
-                ]
-            ],
-            "precision": 93.443,
-            "accuracy": 84.0,
-            "f1_score": 82.609
-        }
-    },
-    {
-        "seed": 29,
-        "base": {
-            "confusion_matrix": [
-                [
-                    77,
                     6
                 ],
                 [
-                    23,
-                    44
+                    19,
+                    67
                 ]
             ],
-            "precision": 88.0,
-            "accuracy": 80.667,
-            "f1_score": 75.214
-        },
-        "advanced": {
-            "confusion_matrix": [
-                [
-                    71,
-                    4
-                ],
-                [
-                    17,
-                    58
-                ]
-            ],
-            "precision": 93.548,
-            "accuracy": 86.0,
-            "f1_score": 84.672
-        }
-    },
-    {
-        "seed": 30,
-        "base": {
-            "confusion_matrix": [
-                [
-                    74,
-                    4
-                ],
-                [
-                    29,
-                    43
-                ]
-            ],
-            "precision": 91.489,
-            "accuracy": 78.0,
-            "f1_score": 72.269
-        },
-        "advanced": {
-            "confusion_matrix": [
-                [
-                    74,
-                    6
-                ],
-                [
-                    16,
-                    54
-                ]
-            ],
-            "precision": 90.0,
-            "accuracy": 85.333,
-            "f1_score": 83.077
+            "precision": 91.781,
+            "accuracy": 85.294,
+            "f1_score": 84.277
         }
     }
 ]

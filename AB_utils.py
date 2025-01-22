@@ -1,14 +1,19 @@
 import re
 from scipy import stats
 import matplotlib.pyplot as plt
+import pandas as pd
+from sklearn.metrics import confusion_matrix, precision_score, accuracy_score, f1_score
+import numpy as np
 
 def get_logs_results(log_file_path):
 	with open(log_file_path, "r") as file:
 		log_lines = file.readlines()
 
-	base_pattern = re.compile(r"Base Prediction: (\d+)")
-	advanced_pattern = re.compile(r"Advanced Prediction: (\d+)")
+	base_pattern = re.compile(r"LogisticRegression")
+	advanced_pattern = re.compile(r"RandomForestClassifier")
+	prediction_pattern = re.compile(r"Prediction: (\d+)")
 	query_pattern = re.compile(r"Zapytanie: (\{.*?\})")
+	end_pattern = re.compile(r"GET /predict HTTP/1.1")
 
 	a_b_experiments = []
 	current_experiment = {"Base": [], "Advanced": []}
@@ -16,24 +21,81 @@ def get_logs_results(log_file_path):
 	for line in log_lines:
 		query_match = query_pattern.search(line)
 		base_match = base_pattern.search(line)
+		prediction_match = prediction_pattern.search(line)
 		advanced_match = advanced_pattern.search(line)
-		
-		if base_match and current_experiment["Advanced"]:
-			a_b_experiments.append(current_experiment)
-			current_experiment = {"Base": [], "Advanced": []}
-			
+		end_match = end_pattern.search(line)
+
 		if base_match:
-			query = query_match.group(1)
-			prediction = int(base_match.group(1))
+			query = eval(query_match.group(1))
+			prediction = int(prediction_match.group(1))
 			current_experiment["Base"].append({"query": query, "prediction": prediction})
 		elif advanced_match:
-			query = query_match.group(1)
-			prediction = int(advanced_match.group(1))
+			query = eval(query_match.group(1))
+			prediction = int(prediction_match.group(1))
 			current_experiment["Advanced"].append({"query": query, "prediction": prediction})
-
-	a_b_experiments.append(current_experiment)
+		elif end_match:
+			a_b_experiments.append(current_experiment)
+			current_experiment = {"Base": [], "Advanced": []}
 
 	return a_b_experiments
+
+def find_ground_truth_for_queries(queries, X_test, Y_test):
+	ground_truth = []
+	for experiment in queries:
+		experiment_ground_truth = []
+		for query in experiment:
+			matching_row = X_test.loc[(X_test == pd.Series(query)).all(axis=1)]
+
+			if not matching_row.empty:
+				index = matching_row.index[0]
+				experiment_ground_truth.append(int(Y_test.loc[index, 'premium_user']))
+		
+		ground_truth.append(experiment_ground_truth)
+	return ground_truth
+
+def calculate_metrics(base_predictions, base_ground_truth, advanced_predictions, advanced_ground_truth):
+	all_metrics = []
+
+	for experiment_no in range(len(base_predictions)):
+		base = {
+		"ground_truth": np.array(base_ground_truth[experiment_no]),
+		"predictions": np.array(base_predictions[experiment_no])
+		}
+
+		advanced = {
+		"ground_truth": np.array(advanced_ground_truth[experiment_no]),
+		"predictions": np.array(advanced_predictions[experiment_no])
+		}
+		
+		# For base model
+		base_confusion_matrix = confusion_matrix(base['ground_truth'], base['predictions'])
+		base_precision = precision_score(base['ground_truth'], base['predictions'])
+		base_accuracy = accuracy_score(base['ground_truth'], base['predictions'])
+		base_f1 = f1_score(base['ground_truth'], base['predictions'])
+		
+		# For advanced model
+		advanced_confusion_matrix = confusion_matrix(advanced['ground_truth'], advanced['predictions'])
+		advanced_precision = precision_score(advanced['ground_truth'], advanced['predictions'])
+		advanced_accuracy = accuracy_score(advanced['ground_truth'], advanced['predictions'])
+		advanced_f1 = f1_score(advanced['ground_truth'], advanced['predictions'])
+		
+		# Collect metrics to dictionary
+		all_metrics.append({
+		"base": {
+		"confusion_matrix": base_confusion_matrix.tolist(),
+		"precision": round(base_precision * 100, 3),
+		"accuracy": round(base_accuracy * 100, 3),
+		"f1_score": round(base_f1 * 100, 3)
+		},
+		"advanced": {
+		"confusion_matrix": advanced_confusion_matrix.tolist(),
+		"precision": round(advanced_precision * 100, 3),
+		"accuracy": round(advanced_accuracy * 100, 3),
+		"f1_score": round(advanced_f1 * 100, 3)
+		}
+		})
+
+	return all_metrics
 
 def plot_pvalue_changes(base, advanced,plot_title):
 	shapiro_p_values = []
