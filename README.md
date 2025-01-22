@@ -31,11 +31,11 @@ pip install tqdm scikit-learn numpy python-dateutil flask pandas matplotlib requ
 3. `choose_model_attributes.py` - wybór atrybutów na podstawie wag znormalizowanego modelu
 
 ## Zmiany w wersji 2
-- Dodanie do wszystkich generatorów losowych w Raporcie z budowy modeli ziaren
-- Naprawienie Skalara tak aby nie wysyłałostrzeżeń
+- Dodanie do wszystkich generatorów losowych ziaren
+- Naprawienie Skalara tak aby nie wysyłał ostrzeżeń
 - Dodanie requirements.txt
 - Dodanie analizy modeli pod względem wstępnych założeń z dokumentacji wstępnej w raporcie z budowy modeli
-- Przerzucenie funkcji pomocniczych z raportu modeli do oddzielnego pliku
-@TODO
-- Dodanie wczytywania danych z predykcji z logów
-- dopasowywanie próbek z logów do ground truth data
+- Przerzucenie funkcji pomocniczych z raportów oddzielnych plików
+- Obsługa mikroserwisem zapytań losowo wybranym modelem (z ziarnem aby było powtarzalne)
+- Dopasowywanie próbek z logów do ground truth data
+- Dodanie wczytywania danych z predykcji z logów do testów AB

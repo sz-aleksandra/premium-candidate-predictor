@@ -3,6 +3,7 @@ from scipy import stats
 import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.metrics import confusion_matrix, precision_score, accuracy_score, f1_score
+from sklearn.model_selection import train_test_split
 import numpy as np
 
 def get_logs_results(log_file_path):
@@ -148,3 +149,19 @@ def plot_pvalue_changes(base, advanced,plot_title):
 
 	plt.tight_layout()
 	plt.show()
+
+def create_more_data(first:list, second:list, seed_list, percantage=0.5):
+    duplicated_first = []
+    duplicated_second = []
+    
+    for seed in seed_list:
+        _,f_sel, _ , s_sel= train_test_split(
+            first, second,
+            test_size=percantage,
+            random_state=seed,
+        )
+        
+        duplicated_first.append(f_sel)
+        duplicated_second.append(s_sel)
+    
+    return duplicated_first,duplicated_second
